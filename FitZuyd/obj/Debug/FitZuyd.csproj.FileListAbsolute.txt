@@ -1,0 +1,14 @@
+D:\repositories\ZuydFit\FitZuyd\bin\Debug\FitZuyd.exe.config
+D:\repositories\ZuydFit\FitZuyd\bin\Debug\FitZuyd.exe
+D:\repositories\ZuydFit\FitZuyd\bin\Debug\FitZuyd.pdb
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.csproj.AssemblyReference.cache
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Landing.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Properties.Resources.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.csproj.GenerateResource.cache
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.csproj.CoreCompileInputs.cache
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.exe
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.pdb
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.MemberLanding.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.MemberLogin.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.MemberMenu.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.MemberRegister.resources

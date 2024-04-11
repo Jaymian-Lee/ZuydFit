@@ -6,21 +6,16 @@ using System.Threading.Tasks;
 
 namespace FitZuyd
 {
-    public class Member
+    public class Person
     {
-
         public int Id { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
-        public int Progress { get; set; }
 
-        public Member(int id, string name, int age, int progress)
+        public Person(string name, int age)
         {
-            Id = id;
             Name = name;
             Age = age;
-            Progress = progress;
         }
-
     }
 }
