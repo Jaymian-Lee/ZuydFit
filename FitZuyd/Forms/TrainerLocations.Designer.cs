@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrainerLocations));
             this.btnMembers = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -152,6 +153,7 @@
             this.Controls.Add(this.btnLocations);
             this.Controls.Add(this.btnActivities);
             this.Controls.Add(this.listViewActivities);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrainerLocations";
             this.Text = "TrainerLocations";
             this.ResumeLayout(false);
