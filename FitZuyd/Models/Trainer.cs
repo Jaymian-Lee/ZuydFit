@@ -9,13 +9,24 @@ namespace FitZuyd
     public class Trainer : Person
     {
 
-        public Activity Activity { get; set; }
+        public List<Activity> Activities { get; set; }
+        public List<Location> Locations { get; set; }
 
         public Trainer(int id, string name, int age) : base(name, age)
         {
             Id = id;
             Name = name;
             Age = age;
+        }
+
+        public void addLocation() 
+        {
+            return;
+        }
+
+        public void addActivity()
+        {
+            return;
         }
 
     }
