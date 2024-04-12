@@ -58,6 +58,7 @@
             this.btnLocations.TabIndex = 6;
             this.btnLocations.Text = "Locations";
             this.btnLocations.UseVisualStyleBackColor = true;
+            this.btnLocations.Click += new System.EventHandler(this.btnLocations_Click);
             // 
             // btnActivities
             // 
@@ -69,6 +70,7 @@
             this.btnActivities.TabIndex = 5;
             this.btnActivities.Text = "Activities";
             this.btnActivities.UseVisualStyleBackColor = true;
+            this.btnActivities.Click += new System.EventHandler(this.btnActivities_Click);
             // 
             // listViewMembers
             // 

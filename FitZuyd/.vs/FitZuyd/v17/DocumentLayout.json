@@ -1,22 +1,84 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\",
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|c:\\users\\lars peuling\\documents\\github\\zuydfit\\fitzuyd\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|solutionrelative:dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\trainermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|solutionrelative:models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\trainerregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|solutionrelative:forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\trainerregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\forms\\memberlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|solutionrelative:forms\\memberlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\trainermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\trainerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\trainerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\trainerlocations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\trainerlocations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\trainerlanding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\trainerlanding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\traineractivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\traineractivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\memberregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\memberregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\forms\\memberlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\memberlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\memberlocations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\memberlocations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\memberlanding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\memberlanding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\memberactivtity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\forms\\memberactivtity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\mac\\home\\documents\\github\\zuydfit\\fitzuyd\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +88,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -51,49 +117,327 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Trainer.cs",
-              "DocumentMoniker": "C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Models\\Trainer.cs",
-              "RelativeDocumentMoniker": "Models\\Trainer.cs",
-              "ToolTip": "C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Models\\Trainer.cs",
-              "RelativeToolTip": "Models\\Trainer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Title": "TrainerRegister.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerRegister.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerRegister.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerRegister.cs",
+              "RelativeToolTip": "Forms\\TrainerRegister.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwBgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T09:59:16.23Z",
+              "WhenOpened": "2024-04-12T11:14:43.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrainerRegister.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerRegister.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerRegister.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerRegister.cs [Design]",
+              "RelativeToolTip": "Forms\\TrainerRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:14:41.585Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrainerMenu.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerMenu.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerMenu.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerMenu.cs",
+              "RelativeToolTip": "Forms\\TrainerMenu.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAiwB4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:14:11.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TrainerMenu.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerMenu.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerMenu.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerMenu.cs [Design]",
+              "RelativeToolTip": "Forms\\TrainerMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:12:12.126Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TrainerLogin.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLogin.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerLogin.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLogin.cs [Design]",
+              "RelativeToolTip": "Forms\\TrainerLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:12:32.601Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TrainerLogin.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLogin.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerLogin.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLogin.cs",
+              "RelativeToolTip": "Forms\\TrainerLogin.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA4wB0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:12:34.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TrainerLocations.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLocations.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerLocations.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLocations.cs",
+              "RelativeToolTip": "Forms\\TrainerLocations.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAiwCQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:11:24.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TrainerLocations.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLocations.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerLocations.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLocations.cs [Design]",
+              "RelativeToolTip": "Forms\\TrainerLocations.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:11:22.193Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TrainerLanding.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLanding.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerLanding.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLanding.cs",
+              "RelativeToolTip": "Forms\\TrainerLanding.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA4wBwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:11:11.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TrainerLanding.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLanding.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerLanding.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerLanding.cs [Design]",
+              "RelativeToolTip": "Forms\\TrainerLanding.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:10:40.451Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TrainerActivity.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerActivity.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerActivity.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerActivity.cs",
+              "RelativeToolTip": "Forms\\TrainerActivity.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAiwCoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:08:33.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TrainerActivity.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerActivity.cs",
+              "RelativeDocumentMoniker": "Forms\\TrainerActivity.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\TrainerActivity.cs [Design]",
+              "RelativeToolTip": "Forms\\TrainerActivity.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:08:24.234Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MemberRegister.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberRegister.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberRegister.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberRegister.cs",
+              "RelativeToolTip": "Forms\\MemberRegister.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAcwCEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:07:13.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MemberRegister.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberRegister.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberRegister.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberRegister.cs [Design]",
+              "RelativeToolTip": "Forms\\MemberRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:07:03.62Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MemberMenu.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberMenu.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberMenu.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberMenu.cs",
+              "RelativeToolTip": "Forms\\MemberMenu.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAiwB0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:06:06.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MemberMenu.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberMenu.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberMenu.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberMenu.cs [Design]",
+              "RelativeToolTip": "Forms\\MemberMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T09:58:48.702Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MemberLogin.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLogin.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberLogin.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLogin.cs",
+              "RelativeToolTip": "Forms\\MemberLogin.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAA4wDYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:05:39.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MemberLogin.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLogin.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberLogin.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLogin.cs [Design]",
+              "RelativeToolTip": "Forms\\MemberLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T09:58:48.625Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MemberLocations.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLocations.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberLocations.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLocations.cs [Design]",
+              "RelativeToolTip": "Forms\\MemberLocations.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:02:10.46Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MemberLocations.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLocations.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberLocations.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLocations.cs",
+              "RelativeToolTip": "Forms\\MemberLocations.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAmwCUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:03:41.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MemberLanding.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLanding.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberLanding.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLanding.cs",
+              "RelativeToolTip": "Forms\\MemberLanding.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA4wBwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:01:57.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MemberLanding.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLanding.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberLanding.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLanding.cs [Design]",
+              "RelativeToolTip": "Forms\\MemberLanding.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:01:18.857Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MemberActivtity.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberActivtity.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberActivtity.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberActivtity.cs [Design]",
+              "RelativeToolTip": "Forms\\MemberActivtity.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T10:59:33.175Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MemberActivtity.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberActivtity.cs",
+              "RelativeDocumentMoniker": "Forms\\MemberActivtity.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberActivtity.cs",
+              "RelativeToolTip": "Forms\\MemberActivtity.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAiwCgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:00:14.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Trainer.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Models\\Trainer.cs",
+              "RelativeDocumentMoniker": "Models\\Trainer.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Models\\Trainer.cs",
+              "RelativeToolTip": "Models\\Trainer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T09:59:16.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "DAL.cs",
-              "DocumentMoniker": "C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\DAL.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\DAL.cs",
               "RelativeDocumentMoniker": "DAL.cs",
-              "ToolTip": "C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\DAL.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\ZuydFit\\FitZuyd\\DAL.cs",
               "RelativeToolTip": "DAL.cs",
               "ViewState": "AQIAACwBAAAAAAAAAAAAADQBAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T09:58:59.32Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MemberLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberLogin.cs",
-              "RelativeDocumentMoniker": "Forms\\MemberLogin.cs",
-              "ToolTip": "D:\\repositories\\ZuydFit\\FitZuyd\\Forms\\MemberLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-04-12T09:58:48.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MemberMenu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberMenu.cs",
-              "RelativeDocumentMoniker": "Forms\\MemberMenu.cs",
-              "ToolTip": "C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberMenu.cs [Design]",
-              "RelativeToolTip": "Forms\\MemberMenu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T09:58:48.702Z"
             }
           ]
         },

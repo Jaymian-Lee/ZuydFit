@@ -55,6 +55,7 @@
             this.btnActivities.TabIndex = 1;
             this.btnActivities.Text = "Activities";
             this.btnActivities.UseVisualStyleBackColor = true;
+            this.btnActivities.Click += new System.EventHandler(this.btnActivities_Click);
             // 
             // btnLocations
             // 
@@ -66,6 +67,7 @@
             this.btnLocations.TabIndex = 2;
             this.btnLocations.Text = "Locations";
             this.btnLocations.UseVisualStyleBackColor = true;
+            this.btnLocations.Click += new System.EventHandler(this.btnLocations_Click);
             // 
             // labelMemberText
             // 

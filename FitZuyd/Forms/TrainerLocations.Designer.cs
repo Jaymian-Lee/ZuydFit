@@ -83,6 +83,7 @@
             this.btnClose.TabIndex = 28;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnCreate
             // 
@@ -116,6 +117,7 @@
             this.btnLocations.TabIndex = 24;
             this.btnLocations.Text = "Locations";
             this.btnLocations.UseVisualStyleBackColor = true;
+            this.btnLocations.Click += new System.EventHandler(this.btnLocations_Click);
             // 
             // btnActivities
             // 
@@ -127,6 +129,7 @@
             this.btnActivities.TabIndex = 23;
             this.btnActivities.Text = "Activities";
             this.btnActivities.UseVisualStyleBackColor = true;
+            this.btnActivities.Click += new System.EventHandler(this.btnActivities_Click);
             // 
             // listViewActivities
             // 

@@ -16,5 +16,19 @@ namespace FitZuyd.Forms
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Landing landing = new Landing();
+            landing.Show();
+            this.Hide();
+        }
+
+        private void btnLoginTrainer_Click(object sender, EventArgs e)
+        {
+            TrainerMenu trainerMenu = new TrainerMenu();
+            trainerMenu.Show();
+            this.Hide();
+        }
     }
 }

@@ -16,5 +16,19 @@ namespace FitZuyd.Forms
         {
             InitializeComponent();
         }
+
+        private void btnLocations_Click(object sender, EventArgs e)
+        {
+            TrainerLocations trainerLocations = new TrainerLocations();
+            trainerLocations.Show();
+            this.Hide();
+        }
+
+        private void btnActivities_Click(object sender, EventArgs e)
+        {
+            TrainerActivity trainerActivity = new TrainerActivity();
+            trainerActivity.Show();
+            this.Hide();
+        }
     }
 }
