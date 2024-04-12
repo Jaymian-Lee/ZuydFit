@@ -27,13 +27,14 @@ namespace FitZuyd
         {
             MemberLanding memberLanding = new MemberLanding();
             memberLanding.Show();
-
             this.Hide();
         }
 
         private void btnTrainer_Click(object sender, EventArgs e)
         {
-            
+            TrainerLanding trainerLanding = new TrainerLanding();
+            trainerLanding.Show();
+            this.Hide();
         }
     }
 }
