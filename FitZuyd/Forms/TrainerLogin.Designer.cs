@@ -34,7 +34,7 @@
             this.inpUsername = new System.Windows.Forms.TextBox();
             this.inpPassword = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.buttonLoginTrainer = new System.Windows.Forms.Button();
+            this.btnLoginTrainer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBack
@@ -101,14 +101,14 @@
             this.lblTitle.TabIndex = 9;
             this.lblTitle.Text = "Login";
             // 
-            // buttonLoginTrainer
+            // btnLoginTrainer
             // 
-            this.buttonLoginTrainer.Location = new System.Drawing.Point(474, 578);
-            this.buttonLoginTrainer.Name = "buttonLoginTrainer";
-            this.buttonLoginTrainer.Size = new System.Drawing.Size(114, 48);
-            this.buttonLoginTrainer.TabIndex = 14;
-            this.buttonLoginTrainer.Text = "Login";
-            this.buttonLoginTrainer.UseVisualStyleBackColor = true;
+            this.btnLoginTrainer.Location = new System.Drawing.Point(474, 578);
+            this.btnLoginTrainer.Name = "btnLoginTrainer";
+            this.btnLoginTrainer.Size = new System.Drawing.Size(114, 48);
+            this.btnLoginTrainer.TabIndex = 14;
+            this.btnLoginTrainer.Text = "Login";
+            this.btnLoginTrainer.UseVisualStyleBackColor = true;
             // 
             // TrainerLogin
             // 
@@ -116,7 +116,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(1200, 703);
-            this.Controls.Add(this.buttonLoginTrainer);
+            this.Controls.Add(this.btnLoginTrainer);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
@@ -139,6 +139,6 @@
         private System.Windows.Forms.TextBox inpUsername;
         private System.Windows.Forms.TextBox inpPassword;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button buttonLoginTrainer;
+        private System.Windows.Forms.Button btnLoginTrainer;
     }
 }
