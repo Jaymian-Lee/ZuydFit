@@ -46,7 +46,20 @@ namespace FitZuyd.Forms
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            this.Show();
+            MemberLanding memberLanding = new MemberLanding();
+            memberLanding.Show();
+        }
+
+        private void buttonLoginMember_Click(object sender, EventArgs e)
+        {
+            // Verberg de huidige form
+            this.Hide();
+
+            // Maak een nieuw exemplaar van de doelform aan
+            MemberMenu memberMenusForm = new MemberMenu();
+
+            // Toon de doelform
+            memberMenusForm.Show();
         }
     }
 }

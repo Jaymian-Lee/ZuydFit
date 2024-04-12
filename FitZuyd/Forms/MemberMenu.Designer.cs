@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberMenu));
             this.listViewActivities = new System.Windows.Forms.ListView();
             this.btnActivities = new System.Windows.Forms.Button();
             this.btnLocations = new System.Windows.Forms.Button();
@@ -55,6 +56,7 @@
             this.btnActivities.TabIndex = 1;
             this.btnActivities.Text = "Activities";
             this.btnActivities.UseVisualStyleBackColor = true;
+            this.btnActivities.Click += new System.EventHandler(this.btnActivities_Click);
             // 
             // btnLocations
             // 
@@ -66,6 +68,7 @@
             this.btnLocations.TabIndex = 2;
             this.btnLocations.Text = "Locations";
             this.btnLocations.UseVisualStyleBackColor = true;
+            this.btnLocations.Click += new System.EventHandler(this.btnLocations_Click);
             // 
             // labelMemberText
             // 
@@ -97,6 +100,7 @@
             this.Controls.Add(this.btnLocations);
             this.Controls.Add(this.btnActivities);
             this.Controls.Add(this.listViewActivities);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MemberMenu";
             this.Text = "MemberMenu";

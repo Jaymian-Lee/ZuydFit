@@ -16,5 +16,12 @@ namespace FitZuyd.Forms
         {
             InitializeComponent();
         }
+
+        private void btnRegisterTrainer_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MemberMenu memberMenu = new MemberMenu();
+            memberMenu.Show();
+        }
     }
 }

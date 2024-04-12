@@ -97,6 +97,7 @@
             this.btnRegisterTrainer.TabIndex = 17;
             this.btnRegisterTrainer.Text = "Registreer";
             this.btnRegisterTrainer.UseVisualStyleBackColor = true;
+            this.btnRegisterTrainer.Click += new System.EventHandler(this.btnRegisterTrainer_Click);
             // 
             // TrainerRegister
             // 
