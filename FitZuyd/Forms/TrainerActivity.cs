@@ -16,10 +16,5 @@ namespace FitZuyd.Forms
         {
             InitializeComponent();
         }
-
-        private void btnMembers_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberRegister));
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.inpUsername = new System.Windows.Forms.TextBox();
@@ -99,7 +98,6 @@
             this.btnRegisterMember.TabIndex = 18;
             this.btnRegisterMember.Text = "Registreer";
             this.btnRegisterMember.UseVisualStyleBackColor = true;
-            this.btnRegisterMember.Click += new System.EventHandler(this.btnRegisterMember_Click);
             // 
             // MemberRegister
             // 
@@ -113,7 +111,6 @@
             this.Controls.Add(this.inpUsername);
             this.Controls.Add(this.inpPassword);
             this.Controls.Add(this.lblTitle);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MemberRegister";
             this.Text = "MemberRegister";

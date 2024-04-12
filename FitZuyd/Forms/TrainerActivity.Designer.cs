@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrainerActivity));
             this.btnClose = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
             this.labelMemberText = new System.Windows.Forms.Label();
@@ -137,7 +136,6 @@
             this.btnMembers.TabIndex = 21;
             this.btnMembers.Text = "Members";
             this.btnMembers.UseVisualStyleBackColor = true;
-            this.btnMembers.Click += new System.EventHandler(this.btnMembers_Click);
             // 
             // TrainerActivity
             // 
@@ -154,7 +152,6 @@
             this.Controls.Add(this.btnLocations);
             this.Controls.Add(this.btnActivities);
             this.Controls.Add(this.listViewActivities);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrainerActivity";
             this.Text = "TrainerActivity";
             this.ResumeLayout(false);

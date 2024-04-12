@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberActivtity));
             this.labelMemberText = new System.Windows.Forms.Label();
             this.btnLocations = new System.Windows.Forms.Button();
             this.btnActivities = new System.Windows.Forms.Button();
@@ -59,7 +58,6 @@
             this.btnLocations.TabIndex = 7;
             this.btnLocations.Text = "Locations";
             this.btnLocations.UseVisualStyleBackColor = true;
-            this.btnLocations.Click += new System.EventHandler(this.btnLocations_Click);
             // 
             // btnActivities
             // 
@@ -71,7 +69,6 @@
             this.btnActivities.TabIndex = 6;
             this.btnActivities.Text = "Activities";
             this.btnActivities.UseVisualStyleBackColor = true;
-            this.btnActivities.Click += new System.EventHandler(this.btnActivities_Click);
             // 
             // listViewActivities
             // 
@@ -115,7 +112,6 @@
             this.btnClose.TabIndex = 11;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // MemberActivtity
             // 
@@ -130,7 +126,6 @@
             this.Controls.Add(this.btnLocations);
             this.Controls.Add(this.btnActivities);
             this.Controls.Add(this.listViewActivities);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MemberActivtity";
             this.Text = "MemberActivtity";
             this.ResumeLayout(false);

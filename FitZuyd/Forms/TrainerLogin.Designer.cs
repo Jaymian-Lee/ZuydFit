@@ -49,7 +49,6 @@
             this.btnBack.TabIndex = 13;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // lblPassword
             // 
@@ -111,7 +110,6 @@
             this.btnLoginTrainer.TabIndex = 14;
             this.btnLoginTrainer.Text = "Login";
             this.btnLoginTrainer.UseVisualStyleBackColor = true;
-            this.btnLoginTrainer.Click += new System.EventHandler(this.btnLoginTrainer_Click);
             // 
             // TrainerLogin
             // 
