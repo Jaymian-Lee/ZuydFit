@@ -12,6 +12,7 @@ namespace FitZuyd
         public int Id { get; set; }
         public string Name { get; set; }
         public int Points { get; set; }
+        public Location Location { get; set; }
 
         public Activity(int id, string name, int points)
         {
