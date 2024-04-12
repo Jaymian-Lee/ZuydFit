@@ -46,7 +46,15 @@ namespace FitZuyd.Forms
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            this.Show();
+            MemberLanding memberLanding = new MemberLanding();
+            memberLanding.Show();
+        }
+
+        private void buttonLoginMember_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MemberMenu memberMenu = new MemberMenu();
+            memberMenu.Show();
         }
     }
 }

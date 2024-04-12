@@ -36,11 +36,12 @@
             // 
             // btnMemberRegister
             // 
-            this.btnMemberRegister.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMemberRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMemberRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnMemberRegister.Location = new System.Drawing.Point(328, 319);
+            this.btnMemberRegister.Location = new System.Drawing.Point(492, 498);
+            this.btnMemberRegister.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMemberRegister.Name = "btnMemberRegister";
-            this.btnMemberRegister.Size = new System.Drawing.Size(150, 46);
+            this.btnMemberRegister.Size = new System.Drawing.Size(225, 72);
             this.btnMemberRegister.TabIndex = 5;
             this.btnMemberRegister.Text = "Register";
             this.btnMemberRegister.UseVisualStyleBackColor = true;
@@ -48,11 +49,12 @@
             // 
             // btnMemberLogin
             // 
-            this.btnMemberLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMemberLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMemberLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnMemberLogin.Location = new System.Drawing.Point(328, 248);
+            this.btnMemberLogin.Location = new System.Drawing.Point(492, 388);
+            this.btnMemberLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMemberLogin.Name = "btnMemberLogin";
-            this.btnMemberLogin.Size = new System.Drawing.Size(150, 46);
+            this.btnMemberLogin.Size = new System.Drawing.Size(225, 72);
             this.btnMemberLogin.TabIndex = 4;
             this.btnMemberLogin.Text = "Login";
             this.btnMemberLogin.UseVisualStyleBackColor = true;
@@ -61,36 +63,39 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(317, 86);
+            this.lblTitle.Location = new System.Drawing.Point(476, 134);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(179, 46);
+            this.lblTitle.Size = new System.Drawing.Size(267, 73);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "Member";
             // 
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(13, 13);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(20, 20);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(0);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.Size = new System.Drawing.Size(112, 36);
             this.btnBack.TabIndex = 6;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // MemberLanding
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 703);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnMemberRegister);
             this.Controls.Add(this.btnMemberLogin);
             this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MemberLanding";
             this.Text = "MemberLanding";
             this.Load += new System.EventHandler(this.MemberLanding_Load);
