@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|solutionrelative:dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|c:\\users\\lars peuling\\documents\\github\\zuydfit\\fitzuyd\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|solutionrelative:models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|c:\\users\\lars peuling\\documents\\github\\zuydfit\\fitzuyd\\forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6772F90B-578A-4B73-8141-CAF059185D1D}|FitZuyd.csproj|solutionrelative:forms\\membermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -69,7 +69,7 @@
               "RelativeDocumentMoniker": "DAL.cs",
               "ToolTip": "C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\DAL.cs",
               "RelativeToolTip": "DAL.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAewG4AAAA7AAAA",
+              "ViewState": "AQIAACwBAAAAAAAAAAAAADQBAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T09:58:59.32Z",
               "EditorCaption": ""
@@ -93,8 +93,7 @@
               "ToolTip": "C:\\Users\\Lars Peuling\\Documents\\GitHub\\ZuydFit\\FitZuyd\\Forms\\MemberMenu.cs [Design]",
               "RelativeToolTip": "Forms\\MemberMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T09:58:48.702Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-12T09:58:48.702Z"
             }
           ]
         },
