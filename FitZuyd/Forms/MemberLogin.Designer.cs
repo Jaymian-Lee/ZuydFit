@@ -113,6 +113,7 @@
             this.buttonLoginMember.TabIndex = 8;
             this.buttonLoginMember.Text = "Login";
             this.buttonLoginMember.UseVisualStyleBackColor = true;
+            this.buttonLoginMember.Click += new System.EventHandler(this.buttonLoginMember_Click);
             // 
             // MemberLogin
             // 

@@ -35,5 +35,12 @@ namespace FitZuyd.Forms
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Landing landing = new Landing();
+            landing.Show();
+        }
     }
 }
