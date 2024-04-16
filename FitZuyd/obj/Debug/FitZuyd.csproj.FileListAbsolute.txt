@@ -12,3 +12,11 @@ D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.MemberLanding.resources
 D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.MemberLogin.resources
 D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.MemberMenu.resources
 D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.MemberRegister.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.MemberActivtity.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.MemberLocations.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.TrainerActivity.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.TrainerLanding.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.TrainerLocations.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.TrainerLogin.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.TrainerMenu.resources
+D:\repositories\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.TrainerRegister.resources
