@@ -12,6 +12,7 @@ namespace FitZuyd.Forms
 {
     public partial class TrainerRegister : Form
     {
+        DAL DAL = new DAL();
         public TrainerRegister()
         {
             InitializeComponent();
@@ -19,9 +20,37 @@ namespace FitZuyd.Forms
 
         private void btnRegisterTrainer_Click(object sender, EventArgs e)
         {
-            TrainerMenu trainerMenu = new TrainerMenu();
-            trainerMenu.Show();
-            this.Hide();
+            try
+            {
+                // Haal de waarden uit de tekstvakken
+                string username = inpUsername.Text;
+                string password = inpPassword.Text;
+                string name = inpFullname.Text;
+                int age = int.Parse(inpAge.Text); // Probeer de leeftijd te converteren
+
+                // Aanmaken van de trainer en toevoegen aan de database
+                Trainer.CreateTrainer(0, name, age, username, password);  // Aanroepen van de statische methode CreateTrainer
+                this.Hide();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Voer een geldig getal in voor de leeftijd.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Er is een fout opgetreden: " + ex.Message);
+            }
+        }
+
+
+        private void inpUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inpPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
