@@ -10,7 +10,10 @@ namespace FitZuyd
 {
     public class DAL
     {
-        public string conString = "Data Source=.;Initial Catalog=FitZuyd;Integrated Security=True";
+        //Connection string to the database - Jay
+        public string conString = "Data Source=desktop-ir29ng7;Initial Catalog=FitZuyd;Integrated Security=True;";
+        //Connection string to the database - Lars
+        //public string conString = "Data Source=.;Initial Catalog=FitZuyd;Integrated Security=True";
         public SqlConnection cnn;
         public DAL()
         {
@@ -40,12 +43,14 @@ namespace FitZuyd
             using (SqlConnection cnn = new SqlConnection(conString))
             {
                 cnn.Open();
-                var query = "insert into Member (Name, Age, Progress) values (@Name, @Age, @Progress)";
+                var query = "insert into Member (Name, Age, Progress, Username, Password) values (@Name, @Age, @Progress, @Username, @Password)";
                 using (SqlCommand cmd = new SqlCommand(query, cnn))
                 {
                     cmd.Parameters.AddWithValue("@Name", member.Name);
                     cmd.Parameters.AddWithValue("@Age", member.Age);
                     cmd.Parameters.AddWithValue("@Progress", member.Progress);
+                    cmd.Parameters.AddWithValue("@Username", member.Username);
+                    cmd.Parameters.AddWithValue("@Password", member.Password);
                     cmd.ExecuteNonQuery();
                     cnn.Close();
                 }
@@ -115,11 +120,13 @@ namespace FitZuyd
             using (SqlConnection cnn = new SqlConnection(conString))
             {
                 cnn.Open();
-                var query = "insert into Trainer (Name, Age) values (@Name, @Age)";
+                var query = "insert into Trainer (Name, Age, Username, Password) values (@Name, @Age, @Username, @Password)";
                 using (SqlCommand cmd = new SqlCommand(query, cnn))
                 {
                     cmd.Parameters.AddWithValue("@Name", trainer.Name);
                     cmd.Parameters.AddWithValue("@Age", trainer.Age);
+                    cmd.Parameters.AddWithValue("@Username", trainer.Username);
+                    cmd.Parameters.AddWithValue("@Password", trainer.Password);
                     cmd.ExecuteNonQuery();
                     cnn.Close();
                 }
@@ -323,5 +330,82 @@ namespace FitZuyd
                 }
             }
         }
+
+        public Trainer GetTrainerByCredentials(string username, string password)
+        {
+            using (SqlConnection cnn = new SqlConnection(conString))
+            {
+                cnn.Open();
+                // Stel de SQL-query samen die gebruikt zal worden om de trainer op te zoeken
+                var query = "SELECT Id, Name, Age, Username, Password FROM Trainer WHERE Username = @Username AND Password = @Password";
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
+                {
+                    // Voeg de parameters toe aan de SQL-query om SQL-injectie te voorkomen
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@Password", password);
+
+                    // Voer de query uit en lees het resultaat
+                    var reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        // Maak een nieuw Trainer-object aan met de gegevens uit de database
+                        Trainer trainer = new Trainer(
+                            Convert.ToInt32(reader["Id"]),
+                            reader["Name"].ToString(),
+                            Convert.ToInt32(reader["Age"]),
+                            reader["Username"].ToString(),
+                            reader["Password"].ToString()
+                        );
+                        cnn.Close();
+                        return trainer;
+                    }
+                    else
+                    {
+                        cnn.Close();
+                        // Retourneer null als er geen trainer gevonden is met de opgegeven credentials
+                        return null;
+                    }
+                }
+            }
+        }public Member GetMemberByCredentials(string username, string password)
+        {
+            using (SqlConnection cnn = new SqlConnection(conString))
+            {
+                cnn.Open();
+                // Stel de SQL-query samen die gebruikt zal worden om de trainer op te zoeken
+                var query = "SELECT Id, Name, Age, Username, Password FROM Member WHERE Username = @Username AND Password = @Password";
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
+                {
+                    // Voeg de parameters toe aan de SQL-query om SQL-injectie te voorkomen
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@Password", password);
+
+                    // Voer de query uit en lees het resultaat
+                    var reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        // Maak een nieuw member-object aan met de gegevens uit de database
+                        Member member = new Member(
+                            Convert.ToInt32(reader["Id"]),
+                            reader["Name"].ToString(),
+                            Convert.ToInt32(reader["Progress"]),
+                            Convert.ToInt32(reader["Age"]),
+                            reader["Username"].ToString(),
+                            reader["Password"].ToString()
+                        );
+                        cnn.Close();
+                        return member;
+                    }
+                    else
+                    {
+                        cnn.Close();
+                        // Retourneer null als er geen trainer gevonden is met de opgegeven credentials
+                        return null;
+                    }
+                }
+            }
+        }
+
+
     }
 }
