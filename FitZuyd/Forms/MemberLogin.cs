@@ -52,9 +52,11 @@ namespace FitZuyd.Forms
 
         private void buttonLoginMember_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MemberMenu memberMenu = new MemberMenu();
-            memberMenu.Show();
+
+            string username = inpUsername.Text;
+            string password = inpPassword.Text;
+            Member.LoginMember(username, password);
+            
         }
     }
 }

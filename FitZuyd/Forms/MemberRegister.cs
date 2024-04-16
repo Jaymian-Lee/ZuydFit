@@ -29,9 +29,20 @@ namespace FitZuyd.Forms
 
         private void btnRegisterMember_Click(object sender, EventArgs e)
         {
-            MemberMenu memberMenu = new MemberMenu();
-            memberMenu.Show();
-            this.Hide();
+
+
+            // Haal de waarden uit de tekstvakken
+            string username = inpUsername.Text;
+            string password = inpPassword.Text;
+            string name = inpFullname.Text;
+            int age = int.Parse(inpAge.Text); // Voeg foutafhandeling toe voor het geval de invoer geen getal is
+
+            // Creëer een nieuw Trainer object
+            Member.CreateMember(0, name, age, 0, username, password);  // Aanroepen van de statische methode CreateTrainer
+
+            // Voeg de nieuwe trainer toe aan de database
+           
+          
         }
     }
 }
