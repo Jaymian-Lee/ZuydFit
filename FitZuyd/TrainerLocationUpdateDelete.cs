@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FitZuyd.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace FitZuyd
         public TrainerLocationUpdateDelete()
         {
             InitializeComponent();
+
+        }
+
+        private void btnClose_location_Click(object sender, EventArgs e)
+        {
+            TrainerLocations location = new TrainerLocations();
+            location.Show();
+            this.Hide();
         }
     }
 }

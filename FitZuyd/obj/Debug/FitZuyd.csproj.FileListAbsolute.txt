@@ -35,3 +35,4 @@ C:\Users\amber\OneDrive\Documenten\GitHub\ZuydFit\FitZuyd\obj\Debug\FitZuyd.cspr
 C:\Users\amber\OneDrive\Documenten\GitHub\ZuydFit\FitZuyd\obj\Debug\FitZuyd.exe
 C:\Users\amber\OneDrive\Documenten\GitHub\ZuydFit\FitZuyd\obj\Debug\FitZuyd.pdb
 C:\Users\amber\OneDrive\Documenten\GitHub\ZuydFit\FitZuyd\obj\Debug\FitZuyd.Forms.TrainerLocationCreate.resources
+C:\Users\amber\OneDrive\Documenten\GitHub\ZuydFit\FitZuyd\obj\Debug\FitZuyd.TrainerLocationUpdateDelete.resources

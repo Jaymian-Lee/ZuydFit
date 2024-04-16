@@ -36,6 +36,7 @@
             this.LocationName = new System.Windows.Forms.Label();
             this.LocationAdress = new System.Windows.Forms.Label();
             this.btnClose_location = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCreate
@@ -108,12 +109,25 @@
             this.btnClose_location.UseVisualStyleBackColor = true;
             this.btnClose_location.Click += new System.EventHandler(this.btnClose_location_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(46, 83);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 24);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Create";
+            // 
             // TrainerLocationCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(421, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClose_location);
             this.Controls.Add(this.LocationAdress);
             this.Controls.Add(this.LocationName);
@@ -137,5 +151,6 @@
         private System.Windows.Forms.Label LocationName;
         private System.Windows.Forms.Label LocationAdress;
         private System.Windows.Forms.Button btnClose_location;
+        private System.Windows.Forms.Label label1;
     }
 }

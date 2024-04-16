@@ -69,5 +69,19 @@ namespace FitZuyd.Forms
             locationCreate.Show();
             this.Hide();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            TrainerLocationUpdateDelete locationUpdateDelete = new TrainerLocationUpdateDelete();
+            locationUpdateDelete.Show();
+            this.Hide();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            TrainerLocationUpdateDelete locationUpdateDelete = new TrainerLocationUpdateDelete();
+            locationUpdateDelete.Show();
+            this.Hide();
+        }
     }
 }
