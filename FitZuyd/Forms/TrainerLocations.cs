@@ -72,14 +72,14 @@ namespace FitZuyd.Forms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            TrainerLocationUpdateDelete locationUpdateDelete = new TrainerLocationUpdateDelete();
+            TrainerLocationUpdate locationUpdateDelete = new TrainerLocationUpdate();
             locationUpdateDelete.Show();
             this.Hide();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            TrainerLocationUpdateDelete locationUpdateDelete = new TrainerLocationUpdateDelete();
+            TrainerLocationUpdate locationUpdateDelete = new TrainerLocationUpdate();
             locationUpdateDelete.Show();
             this.Hide();
         }

@@ -11,11 +11,12 @@ using System.Windows.Forms;
 
 namespace FitZuyd
 {
-    public partial class TrainerLocationUpdateDelete : Form
+    public partial class TrainerLocationUpdate : Form
     {
-        public TrainerLocationUpdateDelete()
+        public TrainerLocationUpdate()
         {
             InitializeComponent();
+
 
         }
 
@@ -25,5 +26,17 @@ namespace FitZuyd
             location.Show();
             this.Hide();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Location location = new Location();
+            location.Id = int.Parse(TextBoxId.Text);
+            location.Name = textBoxName.Text;
+            location.Address = textBoxAdress.Text;
+            location.UpdateFromDatabase();
+
+        }
+
+        
     }
 }
