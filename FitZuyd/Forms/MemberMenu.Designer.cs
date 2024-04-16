@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberMenu));
             this.listViewActivities = new System.Windows.Forms.ListView();
             this.btnActivities = new System.Windows.Forms.Button();
             this.btnLocations = new System.Windows.Forms.Button();
@@ -99,6 +100,7 @@
             this.Controls.Add(this.btnLocations);
             this.Controls.Add(this.btnActivities);
             this.Controls.Add(this.listViewActivities);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MemberMenu";
             this.Text = "MemberMenu";
