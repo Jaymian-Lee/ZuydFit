@@ -15,6 +15,31 @@ namespace FitZuyd.Forms
         public TrainerLocations()
         {
             InitializeComponent();
+
+            Location location = new Location();
+            
+            listViewTLocation.View = View.Details;
+            listViewTLocation.GridLines = true;
+
+            listViewTLocation.Columns.Add("ID", 100);
+            listViewTLocation.Columns.Add("Name: ", 150);
+            listViewTLocation.Columns.Add("Address: ", 200);
+
+            foreach(DataRow row in location.GetAllLocations().Rows)
+            {
+                string locationId = row["ID"].ToString();
+                string locationName = row["Name"].ToString();
+                string locationAddress = row["Address"].ToString();
+
+                ListViewItem listItem = new ListViewItem();
+                listItem.Text = locationId;
+                listItem.SubItems.Add(locationName);
+                listItem.SubItems.Add(locationAddress);
+
+                listViewTLocation.Items.Add(listItem);
+            }
+            
+
         }
 
         private void btnLocations_Click(object sender, EventArgs e)
@@ -35,6 +60,13 @@ namespace FitZuyd.Forms
         {
             TrainerMenu trainerMenu = new TrainerMenu();
             trainerMenu.Show();
+            this.Hide();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            TrainerLocationCreate locationCreate = new TrainerLocationCreate();
+            locationCreate.Show();
             this.Hide();
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FitZuyd.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,8 +7,9 @@ using System.Windows.Forms;
 
 namespace FitZuyd
 {
-    internal static class Program
+    public static class Program
     {
+        public static DAL dAL = new DAL();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,7 @@ namespace FitZuyd
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Landing());
+            Application.Run(new TrainerLocations ());
         }
     }
 }
