@@ -37,13 +37,13 @@
             this.labelMemberText = new System.Windows.Forms.Label();
             this.btnLocations = new System.Windows.Forms.Button();
             this.btnActivities = new System.Windows.Forms.Button();
-            this.listViewActivities = new System.Windows.Forms.ListView();
+            this.listViewTLocation = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // btnMembers
             // 
             this.btnMembers.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMembers.Location = new System.Drawing.Point(542, 71);
+            this.btnMembers.Location = new System.Drawing.Point(542, 70);
             this.btnMembers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMembers.Name = "btnMembers";
             this.btnMembers.Size = new System.Drawing.Size(150, 50);
@@ -61,17 +61,19 @@
             this.btnDelete.TabIndex = 30;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(946, 246);
+            this.btnUpdate.Location = new System.Drawing.Point(946, 245);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(150, 50);
             this.btnUpdate.TabIndex = 29;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnClose
             // 
@@ -88,13 +90,14 @@
             // btnCreate
             // 
             this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.Location = new System.Drawing.Point(946, 176);
+            this.btnCreate.Location = new System.Drawing.Point(946, 177);
             this.btnCreate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(150, 50);
             this.btnCreate.TabIndex = 26;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // labelMemberText
             // 
@@ -103,14 +106,14 @@
             this.labelMemberText.ForeColor = System.Drawing.Color.White;
             this.labelMemberText.Location = new System.Drawing.Point(20, 59);
             this.labelMemberText.Name = "labelMemberText";
-            this.labelMemberText.Size = new System.Drawing.Size(185, 56);
+            this.labelMemberText.Size = new System.Drawing.Size(223, 56);
             this.labelMemberText.TabIndex = 25;
-            this.labelMemberText.Text = "Trainer";
+            this.labelMemberText.Text = "Location";
             // 
             // btnLocations
             // 
             this.btnLocations.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLocations.Location = new System.Drawing.Point(742, 71);
+            this.btnLocations.Location = new System.Drawing.Point(742, 70);
             this.btnLocations.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLocations.Name = "btnLocations";
             this.btnLocations.Size = new System.Drawing.Size(150, 50);
@@ -122,7 +125,7 @@
             // btnActivities
             // 
             this.btnActivities.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActivities.Location = new System.Drawing.Point(946, 71);
+            this.btnActivities.Location = new System.Drawing.Point(946, 70);
             this.btnActivities.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnActivities.Name = "btnActivities";
             this.btnActivities.Size = new System.Drawing.Size(150, 50);
@@ -131,22 +134,22 @@
             this.btnActivities.UseVisualStyleBackColor = true;
             this.btnActivities.Click += new System.EventHandler(this.btnActivities_Click);
             // 
-            // listViewActivities
+            // listViewTLocation
             // 
-            this.listViewActivities.HideSelection = false;
-            this.listViewActivities.Location = new System.Drawing.Point(30, 176);
-            this.listViewActivities.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.listViewActivities.Name = "listViewActivities";
-            this.listViewActivities.Size = new System.Drawing.Size(862, 466);
-            this.listViewActivities.TabIndex = 22;
-            this.listViewActivities.UseCompatibleStateImageBehavior = false;
+            this.listViewTLocation.HideSelection = false;
+            this.listViewTLocation.Location = new System.Drawing.Point(30, 177);
+            this.listViewTLocation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listViewTLocation.Name = "listViewTLocation";
+            this.listViewTLocation.Size = new System.Drawing.Size(862, 466);
+            this.listViewTLocation.TabIndex = 22;
+            this.listViewTLocation.UseCompatibleStateImageBehavior = false;
             // 
             // TrainerLocations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1117, 700);
+            this.ClientSize = new System.Drawing.Size(1118, 700);
             this.Controls.Add(this.btnMembers);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -155,7 +158,7 @@
             this.Controls.Add(this.labelMemberText);
             this.Controls.Add(this.btnLocations);
             this.Controls.Add(this.btnActivities);
-            this.Controls.Add(this.listViewActivities);
+            this.Controls.Add(this.listViewTLocation);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrainerLocations";
             this.Text = "TrainerLocations";
@@ -174,6 +177,6 @@
         private System.Windows.Forms.Label labelMemberText;
         private System.Windows.Forms.Button btnLocations;
         private System.Windows.Forms.Button btnActivities;
-        private System.Windows.Forms.ListView listViewActivities;
+        private System.Windows.Forms.ListView listViewTLocation;
     }
 }

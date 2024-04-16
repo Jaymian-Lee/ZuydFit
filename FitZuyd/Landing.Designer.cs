@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Landing));
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnMember = new System.Windows.Forms.Button();
             this.btnTrainer = new System.Windows.Forms.Button();
@@ -94,6 +95,7 @@
             this.Controls.Add(this.btnTrainer);
             this.Controls.Add(this.btnMember);
             this.Controls.Add(this.lblTitle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Landing";
             this.Text = "Landing";

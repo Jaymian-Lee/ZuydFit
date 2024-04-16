@@ -34,7 +34,7 @@
             this.labelMemberText = new System.Windows.Forms.Label();
             this.btnLocations = new System.Windows.Forms.Button();
             this.btnActivities = new System.Windows.Forms.Button();
-            this.listViewActivities = new System.Windows.Forms.ListView();
+            this.listViewMLocation = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // btnClose
@@ -95,15 +95,15 @@
             this.btnActivities.UseVisualStyleBackColor = true;
             this.btnActivities.Click += new System.EventHandler(this.btnActivities_Click);
             // 
-            // listViewActivities
+            // listViewMLocation
             // 
-            this.listViewActivities.HideSelection = false;
-            this.listViewActivities.Location = new System.Drawing.Point(22, 175);
-            this.listViewActivities.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.listViewActivities.Name = "listViewActivities";
-            this.listViewActivities.Size = new System.Drawing.Size(862, 466);
-            this.listViewActivities.TabIndex = 12;
-            this.listViewActivities.UseCompatibleStateImageBehavior = false;
+            this.listViewMLocation.HideSelection = false;
+            this.listViewMLocation.Location = new System.Drawing.Point(22, 175);
+            this.listViewMLocation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listViewMLocation.Name = "listViewMLocation";
+            this.listViewMLocation.Size = new System.Drawing.Size(862, 466);
+            this.listViewMLocation.TabIndex = 12;
+            this.listViewMLocation.UseCompatibleStateImageBehavior = false;
             // 
             // MemberLocations
             // 
@@ -116,7 +116,7 @@
             this.Controls.Add(this.labelMemberText);
             this.Controls.Add(this.btnLocations);
             this.Controls.Add(this.btnActivities);
-            this.Controls.Add(this.listViewActivities);
+            this.Controls.Add(this.listViewMLocation);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MemberLocations";
             this.Text = "MemberLocations";
@@ -132,6 +132,6 @@
         private System.Windows.Forms.Label labelMemberText;
         private System.Windows.Forms.Button btnLocations;
         private System.Windows.Forms.Button btnActivities;
-        private System.Windows.Forms.ListView listViewActivities;
+        private System.Windows.Forms.ListView listViewMLocation;
     }
 }
