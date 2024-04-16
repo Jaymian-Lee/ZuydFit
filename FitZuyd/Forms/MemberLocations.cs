@@ -14,7 +14,31 @@ namespace FitZuyd.Forms
     {
         public MemberLocations()
         {
+            //listViewMLocation
             InitializeComponent();
+            Location location = new Location();
+
+            listViewMLocation.View = View.Details;
+            listViewMLocation.GridLines = true;
+
+            listViewMLocation.Columns.Add("ID", 100);
+            listViewMLocation.Columns.Add("Name: ", 150);
+            listViewMLocation.Columns.Add("Address: ", 200);
+
+            foreach (DataRow row in location.GetAllLocations().Rows)
+            {
+                string locationId = row["ID"].ToString();
+                string locationName = row["Name"].ToString();
+                string locationAddress = row["Address"].ToString();
+
+                ListViewItem listItem = new ListViewItem();
+                listItem.Text = locationId;
+                listItem.SubItems.Add(locationName);
+                listItem.SubItems.Add(locationAddress);
+
+                listViewMLocation.Items.Add(listItem);
+            }
+
         }
 
         private void btnLocations_Click(object sender, EventArgs e)
