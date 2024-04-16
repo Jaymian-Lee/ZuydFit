@@ -43,9 +43,10 @@
             // btnMembers
             // 
             this.btnMembers.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMembers.Location = new System.Drawing.Point(361, 45);
+            this.btnMembers.Location = new System.Drawing.Point(542, 70);
+            this.btnMembers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMembers.Name = "btnMembers";
-            this.btnMembers.Size = new System.Drawing.Size(100, 32);
+            this.btnMembers.Size = new System.Drawing.Size(150, 50);
             this.btnMembers.TabIndex = 31;
             this.btnMembers.Text = "Members";
             this.btnMembers.UseVisualStyleBackColor = true;
@@ -53,9 +54,10 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(631, 202);
+            this.btnDelete.Location = new System.Drawing.Point(946, 316);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(100, 32);
+            this.btnDelete.Size = new System.Drawing.Size(150, 50);
             this.btnDelete.TabIndex = 30;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -64,9 +66,10 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(631, 157);
+            this.btnUpdate.Location = new System.Drawing.Point(946, 245);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(100, 32);
+            this.btnUpdate.Size = new System.Drawing.Size(150, 50);
             this.btnUpdate.TabIndex = 29;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -75,9 +78,10 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(631, 379);
+            this.btnClose.Location = new System.Drawing.Point(946, 592);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 32);
+            this.btnClose.Size = new System.Drawing.Size(150, 50);
             this.btnClose.TabIndex = 28;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -86,9 +90,10 @@
             // btnCreate
             // 
             this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.Location = new System.Drawing.Point(631, 113);
+            this.btnCreate.Location = new System.Drawing.Point(946, 177);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(100, 32);
+            this.btnCreate.Size = new System.Drawing.Size(150, 50);
             this.btnCreate.TabIndex = 26;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
@@ -99,19 +104,19 @@
             this.labelMemberText.AutoSize = true;
             this.labelMemberText.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMemberText.ForeColor = System.Drawing.Color.White;
-            this.labelMemberText.Location = new System.Drawing.Point(13, 38);
-            this.labelMemberText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelMemberText.Location = new System.Drawing.Point(20, 59);
             this.labelMemberText.Name = "labelMemberText";
-            this.labelMemberText.Size = new System.Drawing.Size(139, 35);
+            this.labelMemberText.Size = new System.Drawing.Size(223, 56);
             this.labelMemberText.TabIndex = 25;
             this.labelMemberText.Text = "Location";
             // 
             // btnLocations
             // 
             this.btnLocations.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLocations.Location = new System.Drawing.Point(495, 45);
+            this.btnLocations.Location = new System.Drawing.Point(742, 70);
+            this.btnLocations.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLocations.Name = "btnLocations";
-            this.btnLocations.Size = new System.Drawing.Size(100, 32);
+            this.btnLocations.Size = new System.Drawing.Size(150, 50);
             this.btnLocations.TabIndex = 24;
             this.btnLocations.Text = "Locations";
             this.btnLocations.UseVisualStyleBackColor = true;
@@ -120,9 +125,10 @@
             // btnActivities
             // 
             this.btnActivities.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActivities.Location = new System.Drawing.Point(631, 45);
+            this.btnActivities.Location = new System.Drawing.Point(946, 70);
+            this.btnActivities.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnActivities.Name = "btnActivities";
-            this.btnActivities.Size = new System.Drawing.Size(100, 32);
+            this.btnActivities.Size = new System.Drawing.Size(150, 50);
             this.btnActivities.TabIndex = 23;
             this.btnActivities.Text = "Activities";
             this.btnActivities.UseVisualStyleBackColor = true;
@@ -131,18 +137,19 @@
             // listViewTLocation
             // 
             this.listViewTLocation.HideSelection = false;
-            this.listViewTLocation.Location = new System.Drawing.Point(20, 113);
+            this.listViewTLocation.Location = new System.Drawing.Point(30, 177);
+            this.listViewTLocation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listViewTLocation.Name = "listViewTLocation";
-            this.listViewTLocation.Size = new System.Drawing.Size(576, 300);
+            this.listViewTLocation.Size = new System.Drawing.Size(862, 466);
             this.listViewTLocation.TabIndex = 22;
             this.listViewTLocation.UseCompatibleStateImageBehavior = false;
             // 
             // TrainerLocations
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(745, 448);
+            this.ClientSize = new System.Drawing.Size(1118, 700);
             this.Controls.Add(this.btnMembers);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -153,7 +160,6 @@
             this.Controls.Add(this.btnActivities);
             this.Controls.Add(this.listViewTLocation);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TrainerLocations";
             this.Text = "TrainerLocations";
             this.ResumeLayout(false);
