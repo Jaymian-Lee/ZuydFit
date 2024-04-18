@@ -323,5 +323,77 @@ namespace FitZuyd
                 }
             }
         }
+        public Trainer GetTrainerByCredentials(string username, string password)
+        {
+            using (SqlConnection cnn = new SqlConnection(conString))
+            {
+                cnn.Open();
+                // Stel de SQL-query samen die gebruikt zal worden om de trainer op te zoeken
+                var query = "SELECT Id, Name, Age, Username, Password FROM Trainer WHERE Username = @Username AND Password = @Password";
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
+                {
+                    // Voeg de parameters toe aan de SQL-query om SQL-injectie te voorkomen
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@Password", password);
+
+                    // Voer de query uit en lees het resultaat
+                    var reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        // Maak een nieuw Trainer-object aan met de gegevens uit de database
+                        Trainer trainer = new Trainer(
+                            Convert.ToInt32(reader["Id"]),
+                            reader["Name"].ToString(),
+                            Convert.ToInt32(reader["Age"]),
+                            reader["Username"].ToString(),
+                            reader["Password"].ToString()
+                        );
+                        cnn.Close();
+                        return trainer;
+                    }
+                    else
+                    {
+                        cnn.Close();
+                        // Retourneer null als er geen trainer gevonden is met de opgegeven credentials
+                        return null;
+                    }
+                }
+            }
+        }
+        public Member GetMemberByCredentials(string username, string password)
+        {
+            using (SqlConnection cnn = new SqlConnection(conString))
+            {
+                cnn.Open();
+                // Stel de SQL-query samen die gebruikt zal worden om de trainer op te zoeken
+                var query = "SELECT Id, Name, Age, Progress, Username, Password FROM Member WHERE Username = @Username AND Password = @Password";
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
+                {
+                    // Voeg de parameters toe aan de SQL-query om SQL-injectie te voorkomen
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@Password", password);
+
+                    // Voer de query uit en lees het resultaat
+                    var reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        // Maak een nieuw member-object aan met de gegevens uit de database
+                        var id = Convert.ToInt32(reader["Id"]);
+                        var name = reader["Name"].ToString();
+                        var age = Convert.ToInt32(reader["Age"]);
+                        var progress = Convert.ToInt32(reader["Progress"]);
+                        Member member = new Member(id, name, age, progress, username, password);
+                        cnn.Close();
+                        return member;
+                    }
+                    else
+                    {
+                        cnn.Close();
+                        // Retourneer null als er geen member gevonden is met de opgegeven credentials
+                        return null;
+                    }
+                }
+            }
+        }
     }
 }

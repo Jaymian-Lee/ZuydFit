@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,11 +15,21 @@ namespace FitZuyd
         public int Points { get; set; }
         public Location Location { get; set; }
 
+        public Activity() 
+        {
+
+        }   
         public Activity(int id, string name, int points)
         {
             Id = id;
             Name = name;
             Points = points;
+        }
+
+        public DataTable GetAllActivities()
+        {
+            DAL dal = new DAL();
+            return dal.GetAllActivities();
         }
     }
 }
