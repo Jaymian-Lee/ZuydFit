@@ -37,5 +37,10 @@ namespace FitZuyd.Forms
             MemberMenu memberMenu = new MemberMenu();
             memberMenu.Show();
         }
+
+        private void btnParticipate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
