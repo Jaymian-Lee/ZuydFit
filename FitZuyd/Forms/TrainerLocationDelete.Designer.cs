@@ -28,35 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.IdLbl = new System.Windows.Forms.Label();
-            this.TextBoxId = new System.Windows.Forms.TextBox();
             this.DeleteLbl = new System.Windows.Forms.Label();
             this.btnClose_location = new System.Windows.Forms.Button();
             this.LocationAdress = new System.Windows.Forms.Label();
             this.LocationName = new System.Windows.Forms.Label();
-            this.textBoxAdress = new System.Windows.Forms.TextBox();
-            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.TextBoxAdress = new System.Windows.Forms.TextBox();
             this.labelLocationText = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.TextBoxName = new System.Windows.Forms.TextBox();
+            this.TextBoxId = new System.Windows.Forms.TextBox();
+            this.IDLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // IdLbl
-            // 
-            this.IdLbl.AutoSize = true;
-            this.IdLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdLbl.ForeColor = System.Drawing.Color.White;
-            this.IdLbl.Location = new System.Drawing.Point(63, 142);
-            this.IdLbl.Name = "IdLbl";
-            this.IdLbl.Size = new System.Drawing.Size(20, 16);
-            this.IdLbl.TabIndex = 61;
-            this.IdLbl.Text = "ID";
-            // 
-            // TextBoxId
-            // 
-            this.TextBoxId.Location = new System.Drawing.Point(66, 161);
-            this.TextBoxId.Name = "TextBoxId";
-            this.TextBoxId.Size = new System.Drawing.Size(295, 22);
-            this.TextBoxId.TabIndex = 60;
             // 
             // DeleteLbl
             // 
@@ -79,13 +61,14 @@
             this.btnClose_location.TabIndex = 58;
             this.btnClose_location.Text = "Close";
             this.btnClose_location.UseVisualStyleBackColor = true;
+            this.btnClose_location.Click += new System.EventHandler(this.btnClose_location_Click);
             // 
             // LocationAdress
             // 
             this.LocationAdress.AutoSize = true;
             this.LocationAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LocationAdress.ForeColor = System.Drawing.Color.White;
-            this.LocationAdress.Location = new System.Drawing.Point(63, 234);
+            this.LocationAdress.Location = new System.Drawing.Point(63, 232);
             this.LocationAdress.Name = "LocationAdress";
             this.LocationAdress.Size = new System.Drawing.Size(50, 16);
             this.LocationAdress.TabIndex = 57;
@@ -102,19 +85,12 @@
             this.LocationName.TabIndex = 56;
             this.LocationName.Text = "Name";
             // 
-            // textBoxAdress
+            // TextBoxAdress
             // 
-            this.textBoxAdress.Location = new System.Drawing.Point(66, 253);
-            this.textBoxAdress.Name = "textBoxAdress";
-            this.textBoxAdress.Size = new System.Drawing.Size(295, 22);
-            this.textBoxAdress.TabIndex = 55;
-            // 
-            // textBoxName
-            // 
-            this.textBoxName.Location = new System.Drawing.Point(66, 205);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(295, 22);
-            this.textBoxName.TabIndex = 54;
+            this.TextBoxAdress.Location = new System.Drawing.Point(66, 251);
+            this.TextBoxAdress.Name = "TextBoxAdress";
+            this.TextBoxAdress.Size = new System.Drawing.Size(295, 22);
+            this.TextBoxAdress.TabIndex = 55;
             // 
             // labelLocationText
             // 
@@ -137,6 +113,32 @@
             this.btnDelete.TabIndex = 52;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // TextBoxName
+            // 
+            this.TextBoxName.Location = new System.Drawing.Point(66, 205);
+            this.TextBoxName.Name = "TextBoxName";
+            this.TextBoxName.Size = new System.Drawing.Size(295, 22);
+            this.TextBoxName.TabIndex = 60;
+            // 
+            // TextBoxId
+            // 
+            this.TextBoxId.Location = new System.Drawing.Point(66, 161);
+            this.TextBoxId.Name = "TextBoxId";
+            this.TextBoxId.Size = new System.Drawing.Size(295, 22);
+            this.TextBoxId.TabIndex = 62;
+            // 
+            // IDLbl
+            // 
+            this.IDLbl.AutoSize = true;
+            this.IDLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IDLbl.ForeColor = System.Drawing.Color.White;
+            this.IDLbl.Location = new System.Drawing.Point(63, 142);
+            this.IDLbl.Name = "IDLbl";
+            this.IDLbl.Size = new System.Drawing.Size(20, 16);
+            this.IDLbl.TabIndex = 61;
+            this.IDLbl.Text = "ID";
             // 
             // TrainerLocationDelete
             // 
@@ -144,14 +146,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(420, 450);
-            this.Controls.Add(this.IdLbl);
             this.Controls.Add(this.TextBoxId);
+            this.Controls.Add(this.IDLbl);
+            this.Controls.Add(this.TextBoxName);
             this.Controls.Add(this.DeleteLbl);
             this.Controls.Add(this.btnClose_location);
             this.Controls.Add(this.LocationAdress);
             this.Controls.Add(this.LocationName);
-            this.Controls.Add(this.textBoxAdress);
-            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.TextBoxAdress);
             this.Controls.Add(this.labelLocationText);
             this.Controls.Add(this.btnDelete);
             this.Name = "TrainerLocationDelete";
@@ -162,16 +164,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label IdLbl;
-        private System.Windows.Forms.TextBox TextBoxId;
         private System.Windows.Forms.Label DeleteLbl;
         private System.Windows.Forms.Button btnClose_location;
         private System.Windows.Forms.Label LocationAdress;
         private System.Windows.Forms.Label LocationName;
-        private System.Windows.Forms.TextBox textBoxAdress;
-        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox TextBoxAdress;
         private System.Windows.Forms.Label labelLocationText;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.TextBox TextBoxName;
+        private System.Windows.Forms.TextBox TextBoxId;
+        private System.Windows.Forms.Label IDLbl;
     }
 }

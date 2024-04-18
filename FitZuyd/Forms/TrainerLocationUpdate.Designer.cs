@@ -159,7 +159,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrainerLocationUpdate";
-            this.Text = "TrainerLocationUpdateDelete";
+            this.Text = "TrainerLocationUpdate";
             this.ResumeLayout(false);
             this.PerformLayout();
 
