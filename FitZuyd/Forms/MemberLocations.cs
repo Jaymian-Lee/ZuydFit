@@ -16,11 +16,8 @@ namespace FitZuyd.Forms
         {
             //listViewMLocation
             InitializeComponent();
-<<<<<<< HEAD
             btnDetails.Click += btnDetails_Click;
 
-=======
->>>>>>> 8b38b198ed44829419150a0aa29929195a5c2462
             Location location = new Location();
 
             listViewMLocation.View = View.Details;
@@ -28,34 +25,22 @@ namespace FitZuyd.Forms
 
             listViewMLocation.Columns.Add("ID", 100);
             listViewMLocation.Columns.Add("Name: ", 150);
-<<<<<<< HEAD
-=======
             listViewMLocation.Columns.Add("Address: ", 200);
->>>>>>> 8b38b198ed44829419150a0aa29929195a5c2462
 
             foreach (DataRow row in location.GetAllLocations().Rows)
             {
                 string locationId = row["ID"].ToString();
                 string locationName = row["Name"].ToString();
-<<<<<<< HEAD
-=======
                 string locationAddress = row["Address"].ToString();
->>>>>>> 8b38b198ed44829419150a0aa29929195a5c2462
 
                 ListViewItem listItem = new ListViewItem();
                 listItem.Text = locationId;
                 listItem.SubItems.Add(locationName);
-<<<<<<< HEAD
-
-                listViewMLocation.Items.Add(listItem);
-            }
-=======
                 listItem.SubItems.Add(locationAddress);
 
                 listViewMLocation.Items.Add(listItem);
             }
 
->>>>>>> 8b38b198ed44829419150a0aa29929195a5c2462
         }
 
         private void btnLocations_Click(object sender, EventArgs e)
