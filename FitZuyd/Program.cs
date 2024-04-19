@@ -18,11 +18,9 @@ namespace FitZuyd
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
             Application.Run(new Landing ());
-=======
+
             Application.Run(new Landing());
->>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
         }
     }
 }
