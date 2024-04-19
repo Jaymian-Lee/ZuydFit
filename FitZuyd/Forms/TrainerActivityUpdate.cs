@@ -18,13 +18,19 @@ namespace FitZuyd.Forms
             InitializeComponent();
         }
 
+        private void btnClose_location_Click(object sender, EventArgs e)
+        {
+            TrainerActivity activity = new TrainerActivity();
+            activity.Show();
+            this.Hide();
+        }
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             Activity activity = new Activity();
-            activity.Id = int.Parse(textBoxId.Text);
+            activity.Id = int.Parse(TextBoxId.Text);
             activity.Name = textBoxName.Text;
             activity.Points = int.Parse(textBoxPoints.Text);
-            activity.Location location = int.Parse(textBoxLocationId.Text);
             activity.UpdateFromDatabase();
 
         }
