@@ -58,5 +58,6 @@ namespace FitZuyd.Forms
             Member.LoginMember(username, password);
             this.Hide();
         }
+
     }
 }

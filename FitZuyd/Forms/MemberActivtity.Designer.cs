@@ -82,6 +82,7 @@
             this.listViewActivities.Size = new System.Drawing.Size(862, 466);
             this.listViewActivities.TabIndex = 5;
             this.listViewActivities.UseCompatibleStateImageBehavior = false;
+            //this.listViewActivities.SelectedIndexChanged += new System.EventHandler(this.listViewActivities_SelectedIndexChanged);
             // 
             // btnParticipate
             // 

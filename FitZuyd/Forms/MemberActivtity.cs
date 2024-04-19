@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,9 @@ namespace FitZuyd.Forms
         public MemberActivtity()
         {
             InitializeComponent();
-            Activity activity  = new Activity();
+
+            Activity activity = new Activity();
+
 
             listViewActivities.View = View.Details;
             listViewActivities.GridLines = true;
@@ -66,7 +69,28 @@ namespace FitZuyd.Forms
 
         private void btnParticipate_Click(object sender, EventArgs e)
         {
+            if (listViewActivities.SelectedItems.Count > 0)
+            {
+                // Haal de geselecteerde activiteit op
+                ListViewItem selectedItem = listViewActivities.SelectedItems[0];
+                int activityId = int.Parse(selectedItem.Text);
 
+                // Voeg de activiteit toe aan de lijst van deelgenomen activiteiten van de huidige gebruiker
+                Member.CurrentUser.ParticipatedActivities.Add(new Activity(activityId));
+
+                // Geef een melding van succesvolle deelname
+                MessageBox.Show("Succesvol deelgenomen aan de activiteit!");
+
+                // Verberg dit scherm en toon het vorige scherm
+                this.Hide();
+                MemberMenu memberMenu = new MemberMenu();
+                memberMenu.Show();
+            }
+            else
+            {
+                MessageBox.Show("Selecteer een activiteit om aan deel te nemen.");
+            }
         }
+
     }
 }

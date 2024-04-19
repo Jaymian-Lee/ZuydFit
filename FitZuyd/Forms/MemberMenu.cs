@@ -15,6 +15,13 @@ namespace FitZuyd.Forms
         public MemberMenu()
         {
             InitializeComponent();
+            foreach (Activity activity in Member.CurrentUser.ParticipatedActivities)
+            {
+                ListViewItem listItem = new ListViewItem();
+                listItem.Text = activity.Id.ToString(); 
+                                                        
+                listViewActivities.Items.Add(listItem);
+            }
         }
 
         private void btnLocations_Click(object sender, EventArgs e)
@@ -37,5 +44,6 @@ namespace FitZuyd.Forms
             landing.Show();
             this.Close();
         }
+
     }
 }

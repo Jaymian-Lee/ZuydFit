@@ -34,6 +34,12 @@ namespace FitZuyd
             Points = points;
         }
 
+        public Activity(int id)
+        {
+            Id = id;
+        }
+
+
         public DataTable GetAllActivities()
         {
             DAL dal = new DAL();

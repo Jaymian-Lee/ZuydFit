@@ -12,6 +12,8 @@ namespace FitZuyd
     {
         public int Progress { get; set; }
         public List<Activity> Activities { get; set; }
+        public List<Activity> ParticipatedActivities { get; set; }
+
 
         public Member(int id, string name, int age, int progress, string username, string password) : base(name, age, username,password)
         {
