@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrainerActivityCreate));
             this.label1 = new System.Windows.Forms.Label();
-            this.btnClose_location = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.LocationId = new System.Windows.Forms.Label();
             this.ActivityPointsLbl = new System.Windows.Forms.Label();
             this.textBoxLocationId = new System.Windows.Forms.TextBox();
@@ -53,15 +53,16 @@
             this.label1.TabIndex = 50;
             this.label1.Text = "Create";
             // 
-            // btnClose_location
+            // btnClose
             // 
-            this.btnClose_location.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose_location.Location = new System.Drawing.Point(226, 270);
-            this.btnClose_location.Name = "btnClose_location";
-            this.btnClose_location.Size = new System.Drawing.Size(100, 32);
-            this.btnClose_location.TabIndex = 49;
-            this.btnClose_location.Text = "Close";
-            this.btnClose_location.UseVisualStyleBackColor = true;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(226, 270);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(100, 32);
+            this.btnClose.TabIndex = 49;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // LocationId
             // 
@@ -148,7 +149,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnClose_location);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.LocationId);
             this.Controls.Add(this.ActivityPointsLbl);
             this.Controls.Add(this.textBoxLocationId);
@@ -166,7 +167,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnClose_location;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label LocationId;
         private System.Windows.Forms.Label ActivityPointsLbl;
         private System.Windows.Forms.TextBox textBoxLocationId;

@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.inpFullname = new System.Windows.Forms.TextBox();
             this.inpAge = new System.Windows.Forms.TextBox();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPassword
@@ -93,7 +94,7 @@
             // btnRegisterTrainer
             // 
             this.btnRegisterTrainer.Location = new System.Drawing.Point(298, 355);
-            this.btnRegisterTrainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegisterTrainer.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegisterTrainer.Name = "btnRegisterTrainer";
             this.btnRegisterTrainer.Size = new System.Drawing.Size(88, 33);
             this.btnRegisterTrainer.TabIndex = 17;
@@ -137,12 +138,23 @@
             this.inpAge.Size = new System.Drawing.Size(200, 22);
             this.inpAge.TabIndex = 18;
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(26, 25);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(88, 33);
+            this.buttonBack.TabIndex = 22;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            // 
             // TrainerRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.inpFullname);
@@ -173,5 +185,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox inpFullname;
         private System.Windows.Forms.TextBox inpAge;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

@@ -67,5 +67,12 @@ namespace FitZuyd.Forms
             trainerMenu.Show();
             this.Hide();
         }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            TrainerActivityCreate trainerActivityCreate = new TrainerActivityCreate();
+            trainerActivityCreate.Show();
+            this.Hide();
+        }
     }
 }

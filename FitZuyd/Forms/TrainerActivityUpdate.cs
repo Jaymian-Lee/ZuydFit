@@ -18,7 +18,7 @@ namespace FitZuyd.Forms
             InitializeComponent();
         }
 
-        private void btnClose_location_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             TrainerActivity activity = new TrainerActivity();
             activity.Show();

@@ -19,10 +19,10 @@ namespace FitZuyd.Forms
         private void btnCreate_Click(object sender, EventArgs e)
         {
             string name = textBoxName.Text;
-            string points = textBoxPoints.Text;
-            string locationId = textBoxLocationId.Text;
+            int points = int.Parse(textBoxLocationId.Text);
+            int locationId = int.Parse(textBoxLocationId.Text);
 
-            Activity activity = new Activity();
+            Activity activity = new Activity(name, points, locationId);
             activity.SaveToDatabase();
 
             MessageBox.Show("Activity was added");
@@ -32,11 +32,14 @@ namespace FitZuyd.Forms
 
         }
 
-        private void btnClose_location_Click(object sender, EventArgs e)
+        
+
+        private void btnClose_Click(object sender, EventArgs e)
         {
             TrainerActivity location = new TrainerActivity();
             location.Show();
             this.Hide();
+
         }
     }
 }
