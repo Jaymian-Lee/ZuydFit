@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FitZuyd.Forms
 {
-    public partial class TrainerActivityCreate : Form
+    public partial class TrainerActivityDelete : Form
     {
-        public TrainerActivityCreate()
+        public TrainerActivityDelete()
         {
             InitializeComponent();
         }
