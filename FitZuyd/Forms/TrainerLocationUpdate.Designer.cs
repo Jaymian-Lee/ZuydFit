@@ -1,6 +1,6 @@
 ﻿namespace FitZuyd
 {
-    partial class TrainerLocationUpdateDelete
+    partial class TrainerLocationUpdate
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrainerLocationUpdateDelete));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrainerLocationUpdate));
             this.btnClose_location = new System.Windows.Forms.Button();
             this.LocationAdress = new System.Windows.Forms.Label();
             this.LocationName = new System.Windows.Forms.Label();
@@ -36,16 +36,15 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelLocationText = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.UpdateLbl = new System.Windows.Forms.Label();
             this.IdLbl = new System.Windows.Forms.Label();
             this.TextBoxId = new System.Windows.Forms.TextBox();
-            this.DeleteBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClose_location
             // 
             this.btnClose_location.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose_location.Location = new System.Drawing.Point(244, 374);
+            this.btnClose_location.Location = new System.Drawing.Point(244, 268);
             this.btnClose_location.Name = "btnClose_location";
             this.btnClose_location.Size = new System.Drawing.Size(100, 32);
             this.btnClose_location.TabIndex = 48;
@@ -110,18 +109,19 @@
             this.btnUpdate.TabIndex = 42;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // label1
+            // UpdateLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(45, 76);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 24);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "Update/Delete";
+            this.UpdateLbl.AutoSize = true;
+            this.UpdateLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.UpdateLbl.ForeColor = System.Drawing.Color.White;
+            this.UpdateLbl.Location = new System.Drawing.Point(45, 76);
+            this.UpdateLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UpdateLbl.Name = "UpdateLbl";
+            this.UpdateLbl.Size = new System.Drawing.Size(77, 24);
+            this.UpdateLbl.TabIndex = 49;
+            this.UpdateLbl.Text = "Update";
             // 
             // IdLbl
             // 
@@ -141,26 +141,15 @@
             this.TextBoxId.Size = new System.Drawing.Size(295, 22);
             this.TextBoxId.TabIndex = 50;
             // 
-            // DeleteBtn
-            // 
-            this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteBtn.Location = new System.Drawing.Point(244, 268);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(100, 32);
-            this.DeleteBtn.TabIndex = 52;
-            this.DeleteBtn.Text = "Delete";
-            this.DeleteBtn.UseVisualStyleBackColor = true;
-            // 
-            // TrainerLocationUpdateDelete
+            // TrainerLocationUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(404, 450);
-            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.IdLbl);
             this.Controls.Add(this.TextBoxId);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.UpdateLbl);
             this.Controls.Add(this.btnClose_location);
             this.Controls.Add(this.LocationAdress);
             this.Controls.Add(this.LocationName);
@@ -169,8 +158,8 @@
             this.Controls.Add(this.labelLocationText);
             this.Controls.Add(this.btnUpdate);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "TrainerLocationUpdateDelete";
-            this.Text = "TrainerLocationUpdateDelete";
+            this.Name = "TrainerLocationUpdate";
+            this.Text = "TrainerLocationUpdate";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,9 +174,8 @@
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label labelLocationText;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label UpdateLbl;
         private System.Windows.Forms.Label IdLbl;
         private System.Windows.Forms.TextBox TextBoxId;
-        private System.Windows.Forms.Button DeleteBtn;
     }
 }

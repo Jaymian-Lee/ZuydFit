@@ -100,6 +100,12 @@
     <Compile Include="Forms\TrainerLocationCreate.Designer.cs">
       <DependentUpon>TrainerLocationCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TrainerLocationDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TrainerLocationDelete.Designer.cs">
+      <DependentUpon>TrainerLocationDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TrainerLocations.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,11 +145,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Trainer.cs" />
-    <Compile Include="TrainerLocationUpdateDelete.cs">
+    <Compile Include="Forms\TrainerLocationUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TrainerLocationUpdateDelete.Designer.cs">
-      <DependentUpon>TrainerLocationUpdateDelete.cs</DependentUpon>
+    <Compile Include="Forms\TrainerLocationUpdate.Designer.cs">
+      <DependentUpon>TrainerLocationUpdate.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\MemberActivtity.resx">
       <DependentUpon>MemberActivtity.cs</DependentUpon>
@@ -172,6 +178,9 @@
     <EmbeddedResource Include="Forms\TrainerLocationCreate.resx">
       <DependentUpon>TrainerLocationCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TrainerLocationDelete.resx">
+      <DependentUpon>TrainerLocationDelete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TrainerLocations.resx">
       <DependentUpon>TrainerLocations.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,8 +205,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TrainerLocationUpdateDelete.resx">
-      <DependentUpon>TrainerLocationUpdateDelete.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TrainerLocationUpdate.resx">
+      <DependentUpon>TrainerLocationUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

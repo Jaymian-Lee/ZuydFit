@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+﻿using FitZuyd.Forms;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace FitZuyd
+{
+    public class Trainer : Person
+    {
+
+        public List<Activity> Activities { get; set; }
+        public List<Location> Locations { get; set; }
+
+        public Trainer(int id, string name, int age,string username, string password) : base(name, age, username, password)
+        {
+            Id = id;
+            Name = name;
+            Age = age;
+            Username = username;
+            Password = password;
+        }
+=======
 ﻿using FitZuyd.Forms;
 using Microsoft.SqlServer.Server;
 using System;
@@ -28,6 +54,7 @@ namespace FitZuyd
             Password = password;
         }
 
+>>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
         public static void CreateTrainer(int id, string name, int age, string username, string password)
         {
             // Creëer een nieuw Trainer object
@@ -64,6 +91,16 @@ namespace FitZuyd
             {
                 // Inloggen mislukt, toon een foutbericht
                 MessageBox.Show("Onjuiste gebruikersnaam of wachtwoord. Probeer het opnieuw.", "Login Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+<<<<<<< HEAD
+            }
+        }
+
+        public void addLocation() 
+        {
+            return;
+        }
+
+=======
                 TrainerLogin trainerLogin = new TrainerLogin();
                 trainerLogin.Show();
             }
@@ -74,6 +111,7 @@ namespace FitZuyd
             return;
         }
 
+>>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
         public void addActivity()
         {
             return;

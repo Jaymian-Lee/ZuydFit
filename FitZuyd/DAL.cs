@@ -330,7 +330,10 @@ namespace FitZuyd
                 }
             }
         }
+<<<<<<< HEAD
+=======
 
+>>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
         public Trainer GetTrainerByCredentials(string username, string password)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -367,13 +370,22 @@ namespace FitZuyd
                     }
                 }
             }
+<<<<<<< HEAD
+        }
+        public Member GetMemberByCredentials(string username, string password)
+=======
         }public Member GetMemberByCredentials(string username, string password)
+>>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
         {
             using (SqlConnection cnn = new SqlConnection(conString))
             {
                 cnn.Open();
                 // Stel de SQL-query samen die gebruikt zal worden om de trainer op te zoeken
+<<<<<<< HEAD
+                var query = "SELECT Id, Name, Age, Progress, Username, Password FROM Member WHERE Username = @Username AND Password = @Password";
+=======
                 var query = "SELECT Id, Name, Age, Username, Password FROM Member WHERE Username = @Username AND Password = @Password";
+>>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
                 using (SqlCommand cmd = new SqlCommand(query, cnn))
                 {
                     // Voeg de parameters toe aan de SQL-query om SQL-injectie te voorkomen
@@ -385,6 +397,13 @@ namespace FitZuyd
                     if (reader.Read())
                     {
                         // Maak een nieuw member-object aan met de gegevens uit de database
+<<<<<<< HEAD
+                        var id = Convert.ToInt32(reader["Id"]);
+                        var name = reader["Name"].ToString();
+                        var age = Convert.ToInt32(reader["Age"]);
+                        var progress = Convert.ToInt32(reader["Progress"]);
+                        Member member = new Member(id, name, age, progress, username, password);
+=======
                         Member member = new Member(
                             Convert.ToInt32(reader["Id"]),
                             reader["Name"].ToString(),
@@ -393,19 +412,27 @@ namespace FitZuyd
                             reader["Username"].ToString(),
                             reader["Password"].ToString()
                         );
+>>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
                         cnn.Close();
                         return member;
                     }
                     else
                     {
                         cnn.Close();
+<<<<<<< HEAD
+                        // Retourneer null als er geen member gevonden is met de opgegeven credentials
+=======
                         // Retourneer null als er geen trainer gevonden is met de opgegeven credentials
+>>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
                         return null;
                     }
                 }
             }
         }
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
     }
 }

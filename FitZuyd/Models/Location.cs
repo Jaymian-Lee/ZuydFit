@@ -49,5 +49,10 @@ namespace FitZuyd
             DAL dal = new DAL();
             dal.UpdateLocation(this);
         }
+        public void DeleteFromDatabase(int id)
+        {
+            DAL dal = new DAL();
+            dal.DeleteLocation(id);
+        }
     }
 }

@@ -20,7 +20,10 @@ namespace FitZuyd
             Age = age;
             Username = username;
             Password = password;
+<<<<<<< HEAD
+=======
 
+>>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
         }
     }
 }
