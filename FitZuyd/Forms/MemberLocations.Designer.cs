@@ -101,7 +101,7 @@
             this.listViewMLocation.Size = new System.Drawing.Size(576, 300);
             this.listViewMLocation.TabIndex = 12;
             this.listViewMLocation.UseCompatibleStateImageBehavior = false;
-            this.listViewMLocation.SelectedIndexChanged += new System.EventHandler(this.listViewMLocation_SelectedIndexChanged);
+           // this.listViewMLocation.SelectedIndexChanged += new System.EventHandler(this.listViewMLocation_SelectedIndexChanged);
             // 
             // MemberLocations
             // 

@@ -25,15 +25,18 @@ namespace FitZuyd.Forms
 
             listViewMLocation.Columns.Add("ID", 100);
             listViewMLocation.Columns.Add("Name: ", 150);
+            // listViewMLocation.Columns.Add("Address: ", 200);
 
             foreach (DataRow row in location.GetAllLocations().Rows)
             {
                 string locationId = row["ID"].ToString();
                 string locationName = row["Name"].ToString();
+                string locationAddress = row["Address"].ToString();
 
                 ListViewItem listItem = new ListViewItem();
                 listItem.Text = locationId;
                 listItem.SubItems.Add(locationName);
+                listItem.SubItems.Add(locationAddress);
 
                 listViewMLocation.Items.Add(listItem);
             }
@@ -69,7 +72,7 @@ namespace FitZuyd.Forms
                 ListViewItem selectedItem = listViewMLocation.SelectedItems[0];
 
                 // Haal de adresinformatie op uit de geselecteerde locatie
-                string address = selectedItem.SubItems[1].Text;
+                string address = selectedItem.SubItems[2].Text;
 
                 // Toon het adres in een berichtvenster
                 MessageBox.Show($"Het adres van de geselecteerde locatie is: {address}", "Locatie Adres");
@@ -78,11 +81,6 @@ namespace FitZuyd.Forms
             {
                 MessageBox.Show("Selecteer een locatie om het adres te tonen.", "Geen locatie geselecteerd");
             }
-        }
-
-        private void listViewMLocation_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
