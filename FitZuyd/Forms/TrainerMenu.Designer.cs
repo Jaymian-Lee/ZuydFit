@@ -33,9 +33,8 @@
             this.btnLocations = new System.Windows.Forms.Button();
             this.btnActivities = new System.Windows.Forms.Button();
             this.listViewMembers = new System.Windows.Forms.ListView();
-            this.btnMembers = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelTrainerText
@@ -80,26 +79,7 @@
             this.listViewMembers.Size = new System.Drawing.Size(718, 207);
             this.listViewMembers.TabIndex = 5;
             this.listViewMembers.UseCompatibleStateImageBehavior = false;
-            // 
-            // btnMembers
-            // 
-            this.btnMembers.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMembers.Location = new System.Drawing.Point(385, 46);
-            this.btnMembers.Name = "btnMembers";
-            this.btnMembers.Size = new System.Drawing.Size(100, 32);
-            this.btnMembers.TabIndex = 1;
-            this.btnMembers.Text = "Members";
-            this.btnMembers.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(45, 157);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(100, 32);
-            this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.listViewMembers.SelectedIndexChanged += new System.EventHandler(this.listViewMembers_SelectedIndexChanged);
             // 
             // btnLogout
             // 
@@ -112,15 +92,26 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(40, 174);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 29);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "All members";
+            // 
             // TrainerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnMembers);
             this.Controls.Add(this.labelTrainerText);
             this.Controls.Add(this.btnLocations);
             this.Controls.Add(this.btnActivities);
@@ -139,8 +130,7 @@
         private System.Windows.Forms.Button btnLocations;
         private System.Windows.Forms.Button btnActivities;
         private System.Windows.Forms.ListView listViewMembers;
-        private System.Windows.Forms.Button btnMembers;
-        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Label label1;
     }
 }

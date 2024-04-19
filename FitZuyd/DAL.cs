@@ -202,11 +202,12 @@ namespace FitZuyd
             using (SqlConnection cnn = new SqlConnection(conString))
             {
                 cnn.Open();
-                var query = "insert into Activity (Name, Points) values (@Name, @Points)";
+                var query = "insert into Activity (Name, Points, LocationId) values (@Name, @Points, @LocationId)";
                 using (SqlCommand cmd = new SqlCommand(query, cnn))
                 {
                     cmd.Parameters.AddWithValue("@Name", activity.Name);
-                    cmd.Parameters.AddWithValue("@Description", activity.Points);
+                    cmd.Parameters.AddWithValue("@Points", activity.Points);
+                    cmd.Parameters.AddWithValue("@LocationId", activity.LocationId);
                     cmd.ExecuteNonQuery();
                     cnn.Close();
                 }
@@ -221,12 +222,13 @@ namespace FitZuyd
             using (SqlConnection cnn = new SqlConnection(conString))
             {
                 cnn.Open();
-                var query = "update Activity set Name = @Name, Points = @Points where Id = @Id";
+                var query = "update Activity set Name = @Name, Points = @Points, LocationId = @LocationId where Id = @Id";
                 using (SqlCommand cmd = new SqlCommand(query, cnn))
                 {
                     cmd.Parameters.AddWithValue("@Id", activity.Id);
                     cmd.Parameters.AddWithValue("@Name", activity.Name);
                     cmd.Parameters.AddWithValue("@Points", activity.Points);
+                    cmd.Parameters.AddWithValue("@LocationId", activity.LocationId);
                     cmd.ExecuteNonQuery();
                     cnn.Close();
                 }
@@ -272,6 +274,24 @@ namespace FitZuyd
                 }
             }
         }
+
+        public DataTable GetAllMembers()
+        {
+            using (SqlConnection cnn = new SqlConnection(conString))
+            {
+                cnn.Open();
+                var query = "select * from Member";
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
+                {
+                    var reader = cmd.ExecuteReader();
+                    var dt = new DataTable();
+                    dt.Load(reader);
+                    cnn.Close();
+                    return dt;
+                }
+            }
+        }
+
         /// <summary>
         /// Adds a location to the database with the constructor values of Location 
         /// </summary>

@@ -16,7 +16,7 @@ namespace FitZuyd.Forms
         {
             InitializeComponent();
         }
-        private void btnDelete_Click(object sender, EventArgs e)
+/*        private void btnDelete_Click(object sender, EventArgs e)
         {
             Activity activity = new Activity();
             int activityId = int.Parse(TextBoxId.Text);
@@ -26,8 +26,22 @@ namespace FitZuyd.Forms
 
 
         }
+*/
 
 
+/*        private void btnClose_Click(object sender, EventArgs e)
+        {
+            
+        }*/
+
+        private void btnDelete_Click_1(object sender, EventArgs e)
+        {
+            Activity activity = new Activity();
+            int activityId = int.Parse(TextBoxId.Text);
+            activity.DeleteFromDatabase(activityId);
+            MessageBox.Show("Activity was deleted");
+            TextBoxId.Clear();
+        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
