@@ -75,14 +75,15 @@ namespace FitZuyd.Forms
             this.Hide();
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnUpdate_Click_1(object sender, EventArgs e)
         {
             TrainerActivityUpdate trainerActivityUpdate = new TrainerActivityUpdate();
             trainerActivityUpdate.Show();
             this.Hide();
+
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnDelete_Click_1(object sender, EventArgs e)
         {
             TrainerActivityDelete trainerActivityDelete = new TrainerActivityDelete();
             trainerActivityDelete.Show();

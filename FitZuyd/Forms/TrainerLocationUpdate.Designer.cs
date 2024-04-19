@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrainerLocationUpdate));
             this.labelDelete = new System.Windows.Forms.Label();
             this.btnClose_location = new System.Windows.Forms.Button();
             this.labelLocationText = new System.Windows.Forms.Label();
@@ -35,7 +36,7 @@
             this.LocationAdress = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.LocationName = new System.Windows.Forms.Label();
-            this.btnCreate = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.IdLbl = new System.Windows.Forms.Label();
             this.TextBoxId = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -48,9 +49,9 @@
             this.labelDelete.Location = new System.Drawing.Point(38, 87);
             this.labelDelete.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(69, 24);
+            this.labelDelete.Size = new System.Drawing.Size(77, 24);
             this.labelDelete.TabIndex = 50;
-            this.labelDelete.Text = "Delete";
+            this.labelDelete.Text = "Update";
             // 
             // btnClose_location
             // 
@@ -61,6 +62,7 @@
             this.btnClose_location.TabIndex = 49;
             this.btnClose_location.Text = "Close";
             this.btnClose_location.UseVisualStyleBackColor = true;
+            this.btnClose_location.Click += new System.EventHandler(this.btnClose_location_Click_1);
             // 
             // labelLocationText
             // 
@@ -110,15 +112,15 @@
             this.LocationName.TabIndex = 47;
             this.LocationName.Text = "Name";
             // 
-            // btnCreate
+            // btnUpdate
             // 
-            this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.Location = new System.Drawing.Point(42, 279);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(100, 32);
-            this.btnCreate.TabIndex = 43;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(42, 279);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(100, 32);
+            this.btnUpdate.TabIndex = 43;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // IdLbl
             // 
@@ -153,7 +155,8 @@
             this.Controls.Add(this.textBoxAdress);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelLocationText);
-            this.Controls.Add(this.btnCreate);
+            this.Controls.Add(this.btnUpdate);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrainerLocationUpdate";
             this.Text = "TrainerLocationUpdate";
             this.ResumeLayout(false);
@@ -170,7 +173,7 @@
         private System.Windows.Forms.Label LocationAdress;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label LocationName;
-        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label IdLbl;
         private System.Windows.Forms.TextBox TextBoxId;
     }

@@ -30,11 +30,14 @@ namespace FitZuyd.Forms
 
 
 
-        private void btnClose_location_Click(object sender, EventArgs e)
+       
+
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
             TrainerLocations location = new TrainerLocations();
             location.Show();
             this.Hide();
+
         }
     }
 }
