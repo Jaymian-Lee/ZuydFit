@@ -1,5 +1,4 @@
-﻿using FitZuyd.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,18 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace FitZuyd
+namespace FitZuyd.Forms
 {
     public partial class TrainerLocationUpdate : Form
     {
         public TrainerLocationUpdate()
         {
             InitializeComponent();
-
-
         }
-
         private void btnClose_location_Click(object sender, EventArgs e)
         {
             TrainerLocations location = new TrainerLocations();
@@ -36,7 +33,5 @@ namespace FitZuyd
             location.UpdateFromDatabase();
 
         }
-
-        
     }
 }

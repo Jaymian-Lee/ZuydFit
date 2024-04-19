@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,9 +16,7 @@ namespace FitZuyd.Forms
         public TrainerLocationDelete()
         {
             InitializeComponent();
-            
         }
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
             Location location = new Location();
@@ -27,11 +24,11 @@ namespace FitZuyd.Forms
             location.DeleteFromDatabase(locationId);
             MessageBox.Show("Location was deleted");
             TextBoxId.Clear();
-           
+
 
         }
 
-        
+
 
         private void btnClose_location_Click(object sender, EventArgs e)
         {

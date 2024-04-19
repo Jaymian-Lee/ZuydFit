@@ -16,5 +16,24 @@ namespace FitZuyd.Forms
         {
             InitializeComponent();
         }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Activity activity = new Activity();
+            int activityId = int.Parse(TextBoxId.Text);
+            activity.DeleteFromDatabase(activityId);
+            MessageBox.Show("Location was deleted");
+            TextBoxId.Clear();
+
+
+        }
+
+
+
+        private void btnClose_location_Click(object sender, EventArgs e)
+        {
+            TrainerActivity activity = new TrainerActivity();
+            activity.Show();
+            this.Hide();
+        }
     }
 }
