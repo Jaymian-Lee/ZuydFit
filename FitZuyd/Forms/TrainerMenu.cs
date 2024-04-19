@@ -30,5 +30,12 @@ namespace FitZuyd.Forms
             trainerActivity.Show();
             this.Hide();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Landing landing = new Landing();
+            landing.Show();
+            this.Close();
+        }
     }
 }

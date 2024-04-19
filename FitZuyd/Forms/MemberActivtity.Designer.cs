@@ -93,6 +93,7 @@
             this.btnParticipate.TabIndex = 9;
             this.btnParticipate.Text = "Participate";
             this.btnParticipate.UseVisualStyleBackColor = true;
+            this.btnParticipate.Click += new System.EventHandler(this.btnParticipate_Click);
             // 
             // btnLeave
             // 

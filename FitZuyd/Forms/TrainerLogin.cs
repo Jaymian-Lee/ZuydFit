@@ -26,9 +26,31 @@ namespace FitZuyd.Forms
 
         private void btnLoginTrainer_Click(object sender, EventArgs e)
         {
-            TrainerMenu trainerMenu = new TrainerMenu();
-            trainerMenu.Show();
-            this.Hide();
+         try
+            {
+                // Haal de waarden uit de tekstvakken
+                string username = inpUsername.Text;
+                string password = inpPassword.Text;
+
+                // Aanmaken van de trainer en toevoegen aan de database
+                Trainer.LoginTrainer(username, password);  // Aanroepen van de statische methode CreateTrainer
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Er is een fout opgetreden: " + ex.Message);
+            }
+        }
+
+
+        private void inpUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inpPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

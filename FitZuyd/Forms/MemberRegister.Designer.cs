@@ -29,24 +29,86 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberRegister));
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.btnRegisterMember = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.inpFullname = new System.Windows.Forms.TextBox();
+            this.inpAge = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.inpUsername = new System.Windows.Forms.TextBox();
             this.inpPassword = new System.Windows.Forms.TextBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.btnRegisterMember = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(276, 125);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(225, 46);
+            this.lblTitle.TabIndex = 8;
+            this.lblTitle.Text = "Registreren";
+            // 
+            // btnRegisterMember
+            // 
+            this.btnRegisterMember.Location = new System.Drawing.Point(300, 381);
+            this.btnRegisterMember.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegisterMember.Name = "btnRegisterMember";
+            this.btnRegisterMember.Size = new System.Drawing.Size(88, 33);
+            this.btnRegisterMember.TabIndex = 3;
+            this.btnRegisterMember.Text = "Registreer";
+            this.btnRegisterMember.UseVisualStyleBackColor = true;
+            this.btnRegisterMember.Click += new System.EventHandler(this.btnRegisterMember_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(300, 330);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 16);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Leeftijd";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(300, 277);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 16);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Volledige naam";
+            // 
+            // inpFullname
+            // 
+            this.inpFullname.Location = new System.Drawing.Point(299, 295);
+            this.inpFullname.Name = "inpFullname";
+            this.inpFullname.Size = new System.Drawing.Size(200, 22);
+            this.inpFullname.TabIndex = 32;
+            // 
+            // inpAge
+            // 
+            this.inpAge.Location = new System.Drawing.Point(300, 348);
+            this.inpAge.Name = "inpAge";
+            this.inpAge.Size = new System.Drawing.Size(200, 22);
+            this.inpAge.TabIndex = 33;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(452, 461);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassword.Location = new System.Drawing.Point(301, 227);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(131, 25);
-            this.lblPassword.TabIndex = 11;
+            this.lblPassword.Size = new System.Drawing.Size(82, 16);
+            this.lblPassword.TabIndex = 35;
             this.lblPassword.Text = "Wachtwoord";
             // 
             // lblUsername
@@ -54,67 +116,57 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(452, 378);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsername.Location = new System.Drawing.Point(301, 174);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(170, 25);
-            this.lblUsername.TabIndex = 10;
+            this.lblUsername.Size = new System.Drawing.Size(107, 16);
+            this.lblUsername.TabIndex = 34;
             this.lblUsername.Text = "Gebruikersnaam";
             // 
             // inpUsername
             // 
-            this.inpUsername.Location = new System.Drawing.Point(450, 406);
-            this.inpUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.inpUsername.Location = new System.Drawing.Point(300, 192);
             this.inpUsername.Name = "inpUsername";
-            this.inpUsername.Size = new System.Drawing.Size(298, 31);
-            this.inpUsername.TabIndex = 9;
-            this.inpUsername.TextChanged += new System.EventHandler(this.inpUsername_TextChanged);
+            this.inpUsername.Size = new System.Drawing.Size(200, 22);
+            this.inpUsername.TabIndex = 30;
             // 
             // inpPassword
             // 
-            this.inpPassword.Location = new System.Drawing.Point(452, 489);
-            this.inpPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.inpPassword.Location = new System.Drawing.Point(301, 245);
             this.inpPassword.Name = "inpPassword";
-            this.inpPassword.Size = new System.Drawing.Size(298, 31);
-            this.inpPassword.TabIndex = 7;
-            this.inpPassword.TextChanged += new System.EventHandler(this.inpPassword_TextChanged);
+            this.inpPassword.Size = new System.Drawing.Size(200, 22);
+            this.inpPassword.TabIndex = 31;
             // 
-            // lblTitle
+            // btnBack
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(414, 195);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(364, 73);
-            this.lblTitle.TabIndex = 8;
-            this.lblTitle.Text = "Registreren";
-            // 
-            // btnRegisterMember
-            // 
-            this.btnRegisterMember.Location = new System.Drawing.Point(450, 561);
-            this.btnRegisterMember.Name = "btnRegisterMember";
-            this.btnRegisterMember.Size = new System.Drawing.Size(132, 52);
-            this.btnRegisterMember.TabIndex = 18;
-            this.btnRegisterMember.Text = "Registreer";
-            this.btnRegisterMember.UseVisualStyleBackColor = true;
-            this.btnRegisterMember.Click += new System.EventHandler(this.btnRegisterMember_Click);
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(9, 9);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 38;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // MemberRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1200, 703);
-            this.Controls.Add(this.btnRegisterMember);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.inpFullname);
+            this.Controls.Add(this.inpAge);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.inpUsername);
             this.Controls.Add(this.inpPassword);
+            this.Controls.Add(this.btnRegisterMember);
             this.Controls.Add(this.lblTitle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MemberRegister";
             this.Text = "MemberRegister";
             this.ResumeLayout(false);
@@ -123,12 +175,16 @@
         }
 
         #endregion
-
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnRegisterMember;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox inpFullname;
+        private System.Windows.Forms.TextBox inpAge;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.TextBox inpUsername;
         private System.Windows.Forms.TextBox inpPassword;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button btnRegisterMember;
+        private System.Windows.Forms.Button btnBack;
     }
 }
