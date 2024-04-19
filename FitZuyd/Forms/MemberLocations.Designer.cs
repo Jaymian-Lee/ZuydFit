@@ -101,7 +101,7 @@
             this.listViewMLocation.Size = new System.Drawing.Size(576, 300);
             this.listViewMLocation.TabIndex = 12;
             this.listViewMLocation.UseCompatibleStateImageBehavior = false;
-           // this.listViewMLocation.SelectedIndexChanged += new System.EventHandler(this.listViewMLocation_SelectedIndexChanged);
+            this.listViewMLocation.SelectedIndexChanged += new System.EventHandler(this.listViewMLocation_SelectedIndexChanged);
             // 
             // MemberLocations
             // 
@@ -116,7 +116,7 @@
             this.Controls.Add(this.btnActivities);
             this.Controls.Add(this.listViewMLocation);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MemberLocations";
             this.Text = "MemberLocations";
             this.ResumeLayout(false);

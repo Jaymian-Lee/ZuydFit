@@ -274,6 +274,24 @@ namespace FitZuyd
                 }
             }
         }
+
+        public DataTable GetAllMembers()
+        {
+            using (SqlConnection cnn = new SqlConnection(conString))
+            {
+                cnn.Open();
+                var query = "select * from Member";
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
+                {
+                    var reader = cmd.ExecuteReader();
+                    var dt = new DataTable();
+                    dt.Load(reader);
+                    cnn.Close();
+                    return dt;
+                }
+            }
+        }
+
         /// <summary>
         /// Adds a location to the database with the constructor values of Location 
         /// </summary>

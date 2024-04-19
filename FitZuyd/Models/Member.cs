@@ -1,6 +1,7 @@
 ﻿using FitZuyd.Forms;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,10 @@ namespace FitZuyd
     {
         public int Progress { get; set; }
         public List<Activity> Activities { get; set; }
-
+        public Member() : base("", 0, "", "")
+        {
+            // Initializeer eventuele andere eigenschappen die je hebt
+        }
         public Member(int id, string name, int age, int progress, string username, string password) : base(name, age, username,password)
         {
             Id = id;
@@ -22,6 +26,8 @@ namespace FitZuyd
             Username = username;
             Password = password;
         }
+
+
 
         public static void CreateMember(int id, string name, int age, int progress, string username, string password)
         {
@@ -58,6 +64,12 @@ namespace FitZuyd
                 memberLogin.Show();
                 MessageBox.Show("Onjuiste gebruikersnaam of wachtwoord. Probeer het opnieuw.", "Login Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        public DataTable GetAllMembers()
+        {
+            DAL dal = new DAL();
+            return dal.GetAllMembers();
         }
 
         public void participateSport()

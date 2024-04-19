@@ -82,5 +82,10 @@ namespace FitZuyd.Forms
                 MessageBox.Show("Selecteer een locatie om het adres te tonen.", "Geen locatie geselecteerd");
             }
         }
+
+        private void listViewMLocation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
