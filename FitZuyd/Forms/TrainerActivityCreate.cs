@@ -18,18 +18,7 @@ namespace FitZuyd.Forms
         }
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            string name = textBoxName.Text;
-            int points = int.Parse(textBoxLocationId.Text);
-            int locationId = int.Parse(textBoxLocationId.Text);
-
-            Activity activity = new Activity(name, points, locationId);
-            activity.SaveToDatabase();
-
-            MessageBox.Show("Activity was added");
-            textBoxName.Clear();
-            textBoxPoints.Clear();
-            textBoxLocationId.Clear();
-
+           
         }
 
         
@@ -39,6 +28,23 @@ namespace FitZuyd.Forms
             TrainerActivity location = new TrainerActivity();
             location.Show();
             this.Hide();
+
+        }
+
+        private void btnCreate_Click_1(object sender, EventArgs e)
+        {
+            Activity GlobalActivity = new Activity();
+            string name = textBoxName.Text;
+            int points = int.Parse(textBoxLocationId.Text);
+            int locationId = int.Parse(textBoxLocationId.Text);
+
+            Activity activity = new Activity(name, points, locationId);
+            GlobalActivity.SaveToDatabase(activity);
+
+            MessageBox.Show("Activity was added");
+            textBoxName.Clear();
+            textBoxPoints.Clear();
+            textBoxLocationId.Clear();
 
         }
     }

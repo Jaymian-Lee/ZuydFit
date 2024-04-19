@@ -74,8 +74,6 @@ namespace FitZuyd.Forms
             trainerActivityCreate.Show();
             this.Hide();
         }
-<<<<<<< HEAD
-=======
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -90,6 +88,5 @@ namespace FitZuyd.Forms
             trainerActivityDelete.Show();
             this.Hide();
         }
->>>>>>> 222728687fe3047720ebdf36bcbd52b93c8f6889
     }
 }
