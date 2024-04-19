@@ -15,6 +15,33 @@ namespace FitZuyd.Forms
         public TrainerMenu()
         {
             InitializeComponent();
+
+            Member member = new Member();
+
+            listViewMembers.View = View.Details;
+            listViewMembers.GridLines = true;
+
+            listViewMembers.Columns.Add("ID", 100);
+            listViewMembers.Columns.Add("Name: ", 150);
+            listViewMembers.Columns.Add("Age: ", 150);
+            listViewMembers.Columns.Add("Progress: ", 200);
+
+            foreach (DataRow row in member.GetAllMembers().Rows)
+            {
+                string memberId = row["ID"].ToString();
+                string memberName = row["Name"].ToString();
+                string memberAge = row["Age"].ToString();
+                string memberProgress = row["Progress"].ToString();
+
+                ListViewItem listItem = new ListViewItem();
+                listItem.Text = memberId;
+                listItem.SubItems.Add(memberName);
+                listItem.SubItems.Add(memberAge);
+                listItem.SubItems.Add(memberProgress);
+
+                listViewMembers.Items.Add(listItem);
+            }
+
         }
 
         private void btnLocations_Click(object sender, EventArgs e)
@@ -36,6 +63,11 @@ namespace FitZuyd.Forms
             Landing landing = new Landing();
             landing.Show();
             this.Close();
+        }
+
+        private void listViewMembers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
