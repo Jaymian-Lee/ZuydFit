@@ -148,6 +148,7 @@
             this.buttonBack.TabIndex = 22;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
+
             // 
             // TrainerRegister
             // 
@@ -156,6 +157,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonBack);
+
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.inpFullname);
@@ -186,7 +188,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox inpFullname;
         private System.Windows.Forms.TextBox inpAge;
-        private System.Windows.Forms.Button buttonBack;
-
+        private System.Windows.Forms.Button buttonBack
     }
 }

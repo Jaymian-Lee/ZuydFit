@@ -25,7 +25,7 @@ namespace FitZuyd.Forms
 
             listViewMLocation.Columns.Add("ID", 100);
             listViewMLocation.Columns.Add("Name: ", 150);
-            listViewMLocation.Columns.Add("Address: ", 200);
+            // listViewMLocation.Columns.Add("Address: ", 200);
 
             foreach (DataRow row in location.GetAllLocations().Rows)
             {
