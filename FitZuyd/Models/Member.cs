@@ -52,10 +52,11 @@ namespace FitZuyd
                 memberMenu.Show();
             }
             else
+
             {
-                MessageBox.Show("Onjuiste gebruikersnaam of wachtwoord. Probeer het opnieuw.", "Login Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 MemberLogin memberLogin = new MemberLogin();
                 memberLogin.Show();
+                MessageBox.Show("Onjuiste gebruikersnaam of wachtwoord. Probeer het opnieuw.", "Login Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
