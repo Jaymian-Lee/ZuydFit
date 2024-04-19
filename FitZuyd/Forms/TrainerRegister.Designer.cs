@@ -40,8 +40,6 @@
             this.inpFullname = new System.Windows.Forms.TextBox();
             this.inpAge = new System.Windows.Forms.TextBox();
             this.buttonBack = new System.Windows.Forms.Button();
-
-            this.BackBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPassword
@@ -140,6 +138,7 @@
             this.inpAge.Size = new System.Drawing.Size(200, 22);
             this.inpAge.TabIndex = 18;
             // 
+
             // buttonBack
             // 
             this.buttonBack.Location = new System.Drawing.Point(26, 25);
@@ -149,16 +148,7 @@
             this.buttonBack.TabIndex = 22;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
-            // BackBtn
-            // 
-            this.BackBtn.Location = new System.Drawing.Point(411, 355);
-            this.BackBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.BackBtn.Name = "BackBtn";
-            this.BackBtn.Size = new System.Drawing.Size(88, 33);
-            this.BackBtn.TabIndex = 22;
-            this.BackBtn.Text = "Back";
-            this.BackBtn.UseVisualStyleBackColor = true;
-            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+
             // 
             // TrainerRegister
             // 
@@ -167,7 +157,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.BackBtn);
+
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.inpFullname);
@@ -198,7 +188,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox inpFullname;
         private System.Windows.Forms.TextBox inpAge;
-        private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.Button BackBtn;
+        private System.Windows.Forms.Button buttonBack
     }
 }
