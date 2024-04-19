@@ -18,7 +18,7 @@ namespace FitZuyd
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TrainerLocations ());
+            Application.Run(new Landing());
         }
     }
 }

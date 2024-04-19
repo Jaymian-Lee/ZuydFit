@@ -38,11 +38,15 @@ namespace FitZuyd.Forms
             int age = int.Parse(inpAge.Text); // Voeg foutafhandeling toe voor het geval de invoer geen getal is
 
             // Creëer een nieuw Trainer object
-            Member.CreateMember(0, name, age, 0, username, password);  // Aanroepen van de statische methode CreateTrainer
-
-            // Voeg de nieuwe trainer toe aan de database
-           
+            Member.CreateMember(0, name, age, 0, username, password);  // Aanroepen van de statische methode CreateTrainer           
           
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            MemberLanding memberLanding = new MemberLanding();
+            memberLanding.Show();
+            this.Hide();
         }
     }
 }
