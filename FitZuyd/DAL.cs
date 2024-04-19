@@ -11,9 +11,9 @@ namespace FitZuyd
     public class DAL
     {
         //Connection string to the database - Jay
-        public string conString = "Data Source=desktop-ir29ng7;Initial Catalog=FitZuyd;Integrated Security=True;";
+        //public string conString = "Data Source=desktop-ir29ng7;Initial Catalog=FitZuyd;Integrated Security=True;";
         //Connection string to the database - Lars
-        //public string conString = "Data Source=.;Initial Catalog=FitZuyd;Integrated Security=True";
+        public string conString = "Data Source=.;Initial Catalog=FitZuyd;Integrated Security=True";
         public SqlConnection cnn;
         public DAL()
         {

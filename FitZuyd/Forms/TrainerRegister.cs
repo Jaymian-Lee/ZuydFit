@@ -52,5 +52,12 @@ namespace FitZuyd.Forms
         {
 
         }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            TrainerLogin trainerLogin = new TrainerLogin();
+            trainerLogin.Show();
+            this.Hide();
+        }
     }
 }
