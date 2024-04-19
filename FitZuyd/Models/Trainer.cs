@@ -63,6 +63,8 @@ namespace FitZuyd
             else
             {
                 // Inloggen mislukt, toon een foutbericht
+                TrainerLogin trainerLogin = new TrainerLogin();
+                trainerLogin.Show();
                 MessageBox.Show("Onjuiste gebruikersnaam of wachtwoord. Probeer het opnieuw.", "Login Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

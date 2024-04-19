@@ -56,7 +56,7 @@ namespace FitZuyd.Forms
             string username = inpUsername.Text;
             string password = inpPassword.Text;
             Member.LoginMember(username, password);
-            
+            this.Hide();
         }
     }
 }
