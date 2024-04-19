@@ -31,5 +31,22 @@ namespace FitZuyd
             DAL dal = new DAL();
             return dal.GetAllActivities();
         }
+
+        public void SaveToDatabase()
+        {
+            DAL dal = new DAL();
+            dal.AddActivity(this);
+        }
+
+        public void UpdateFromDatabase()
+        {
+            DAL dal = new DAL();
+            dal.UpdateActivity(this);
+        }
+        public void DeleteFromDatabase(int id)
+        {
+            DAL dal = new DAL();
+            dal.DeleteActivity(id);
+        }
     }
 }
