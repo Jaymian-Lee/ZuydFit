@@ -13,11 +13,7 @@ namespace FitZuyd
         public int Progress { get; set; }
         public List<Activity> Activities { get; set; }
 
-<<<<<<< HEAD
         public Member(int id, string name, int age, int progress, string username, string password) : base(name, age, username,password)
-=======
-        public Member(int id, string name, int age, int progress, string username, string password) : base(name, age, username, password)
->>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
         {
             Id = id;
             Name = name;
@@ -44,11 +40,8 @@ namespace FitZuyd
             }
         }
 
-<<<<<<< HEAD
+
         public static void LoginMember(string username, string password)
-=======
-        public static void LoginMember(string username, string password) 
->>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
         {
             DAL DAL = new DAL();
             Member member = DAL.GetMemberByCredentials(username, password);
@@ -61,12 +54,8 @@ namespace FitZuyd
             else
             {
                 MessageBox.Show("Onjuiste gebruikersnaam of wachtwoord. Probeer het opnieuw.", "Login Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
-<<<<<<< HEAD
-=======
                 MemberLogin memberLogin = new MemberLogin();
                 memberLogin.Show();
->>>>>>> e239ee287ce2435f78d8e0aa3f0a677b67e516f8
-
             }
         }
 
