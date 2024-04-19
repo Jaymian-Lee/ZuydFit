@@ -17,12 +17,7 @@ namespace FitZuyd.Forms
         {
             InitializeComponent();
         }
-        private void btnClose_location_Click(object sender, EventArgs e)
-        {
-            TrainerLocations location = new TrainerLocations();
-            location.Show();
-            this.Hide();
-        }
+        
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -32,6 +27,13 @@ namespace FitZuyd.Forms
             location.Address = textBoxAdress.Text;
             location.UpdateFromDatabase();
 
+        }
+
+        private void btnClose_location_Click_1(object sender, EventArgs e)
+        {
+            TrainerLocations location = new TrainerLocations();
+            location.Show();
+            this.Hide();
         }
     }
 }

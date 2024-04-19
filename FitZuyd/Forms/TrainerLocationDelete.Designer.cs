@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrainerLocationDelete));
             this.labelDelete = new System.Windows.Forms.Label();
-            this.btnClose_location = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.LocationAdress = new System.Windows.Forms.Label();
             this.LocationName = new System.Windows.Forms.Label();
             this.textBoxAdress = new System.Windows.Forms.TextBox();
@@ -52,15 +53,16 @@
             this.labelDelete.TabIndex = 50;
             this.labelDelete.Text = "Delete";
             // 
-            // btnClose_location
+            // btnClose
             // 
-            this.btnClose_location.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose_location.Location = new System.Drawing.Point(237, 265);
-            this.btnClose_location.Name = "btnClose_location";
-            this.btnClose_location.Size = new System.Drawing.Size(100, 32);
-            this.btnClose_location.TabIndex = 49;
-            this.btnClose_location.Text = "Close";
-            this.btnClose_location.UseVisualStyleBackColor = true;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(237, 265);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(100, 32);
+            this.btnClose.TabIndex = 49;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // LocationAdress
             // 
@@ -147,13 +149,14 @@
             this.Controls.Add(this.IdLbl);
             this.Controls.Add(this.TextBoxId);
             this.Controls.Add(this.labelDelete);
-            this.Controls.Add(this.btnClose_location);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.LocationAdress);
             this.Controls.Add(this.LocationName);
             this.Controls.Add(this.textBoxAdress);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelLocationText);
             this.Controls.Add(this.btnDelete);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrainerLocationDelete";
             this.Text = "TrainerLocationDelete";
             this.ResumeLayout(false);
@@ -164,7 +167,7 @@
         #endregion
 
         private System.Windows.Forms.Label labelDelete;
-        private System.Windows.Forms.Button btnClose_location;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label LocationAdress;
         private System.Windows.Forms.Label LocationName;
         private System.Windows.Forms.TextBox textBoxAdress;
