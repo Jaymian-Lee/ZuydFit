@@ -20,6 +20,7 @@ namespace FitZuyd
         {
 
         }
+
         public Activity(string name, int points, int locationId) 
         {
             Name = name;
