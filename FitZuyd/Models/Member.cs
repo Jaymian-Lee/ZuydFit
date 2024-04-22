@@ -12,16 +12,17 @@ namespace FitZuyd
     public class Member : Person
     {
         public int Progress { get; set; }
-        public List<Activity> Activities { get; set; }
-        public List<Activity> ParticipatedActivities { get; set; }
-        public static Member CurrentUser { get; set; }
+        public List<Activity> Activities { get; set; } = new List<Activity>();
+        public static List<Activity> ParticipatedActivities { get; set; } = new List<Activity>();
 
-
+        // Lege constructor voor het aanmaken van een nieuw Member object
         public Member() : base("", 0, "", "")
         {
-            // Initializeer eventuele andere eigenschappen die je hebt
+            ParticipatedActivities = new List<Activity>(); // Zorg dat deze lijst geïnitialiseerd is
         }
-        public Member(int id, string name, int age, int progress, string username, string password) : base(name, age, username,password)
+
+        // Constructor voor het aanmaken van een nieuw Member object
+        public Member(int id, string name, int age, int progress, string username, string password) : base(name, age, username, password)
         {
             Id = id;
             Name = name;
@@ -29,13 +30,18 @@ namespace FitZuyd
             Progress = progress;
             Username = username;
             Password = password;
+            ParticipatedActivities = new List<Activity>();
         }
 
+        public void AddActivity(Activity activity)
+        {
+            ParticipatedActivities.Add(activity);
+        }
 
-
+        // Methode om een nieuw Member object aan te maken en toe te voegen aan de database
         public static void CreateMember(int id, string name, int age, int progress, string username, string password)
         {
-            DAL DAL = new DAL();
+            DAL DAL = new DAL(); // Assuming you have implemented the DAL class
             try
             {
                 Member newMember = new Member(id, name, age, progress, username, password);
@@ -50,10 +56,10 @@ namespace FitZuyd
             }
         }
 
-
+        // Methode om een Member in te loggen
         public static void LoginMember(string username, string password)
         {
-            DAL DAL = new DAL();
+            DAL DAL = new DAL(); // Assuming you have implemented the DAL class
             Member member = DAL.GetMemberByCredentials(username, password);
 
             if (member != null)
@@ -62,7 +68,6 @@ namespace FitZuyd
                 memberMenu.Show();
             }
             else
-
             {
                 MemberLogin memberLogin = new MemberLogin();
                 memberLogin.Show();
@@ -70,25 +75,35 @@ namespace FitZuyd
             }
         }
 
+        // Methode om alle Members op te halen uit de database
         public DataTable GetAllMembers()
         {
-            DAL dal = new DAL();
+            DAL dal = new DAL(); // Assuming you have implemented the DAL class
             return dal.GetAllMembers();
         }
 
+        // Methode om deel te nemen aan een sport
         public void participateSport()
         {
-            return;
+            // Implement logic to handle sport participation
+            // This could involve updating progress points, adding a sport activity to the participated activities list, etc.
+            MessageBox.Show("Deelgenomen aan een sport!");
         }
 
-        public void participateActivity() 
-        { 
-            return; 
+        // Methode om deel te nemen aan een activiteit
+        public void participateActivity()
+        {
+            // Implement logic to handle activity participation
+            // This could involve updating progress points, adding an activity to the participated activities list, etc.
+            MessageBox.Show("Deelgenomen aan een activiteit!");
         }
 
+        // Methode om de voortgang weer te geven
         public void showProgress()
         {
-            return;
+            // Implement logic to display the member's progress
+            // This could involve showing a progress bar, displaying a percentage, or providing other visual feedback
+            MessageBox.Show("Uw voortgang: " + Progress);
         }
     }
 }

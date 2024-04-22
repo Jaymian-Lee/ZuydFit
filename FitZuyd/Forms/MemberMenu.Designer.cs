@@ -40,20 +40,19 @@
             // listViewActivities
             // 
             this.listViewActivities.HideSelection = false;
-            this.listViewActivities.Location = new System.Drawing.Point(60, 322);
-            this.listViewActivities.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listViewActivities.Location = new System.Drawing.Point(40, 206);
             this.listViewActivities.Name = "listViewActivities";
-            this.listViewActivities.Size = new System.Drawing.Size(1075, 321);
+            this.listViewActivities.Size = new System.Drawing.Size(718, 207);
             this.listViewActivities.TabIndex = 0;
             this.listViewActivities.UseCompatibleStateImageBehavior = false;
+            this.listViewActivities.SelectedIndexChanged += new System.EventHandler(this.listViewActivities_SelectedIndexChanged);
             // 
             // btnActivities
             // 
             this.btnActivities.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActivities.Location = new System.Drawing.Point(976, 72);
-            this.btnActivities.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnActivities.Location = new System.Drawing.Point(651, 46);
             this.btnActivities.Name = "btnActivities";
-            this.btnActivities.Size = new System.Drawing.Size(150, 50);
+            this.btnActivities.Size = new System.Drawing.Size(100, 32);
             this.btnActivities.TabIndex = 1;
             this.btnActivities.Text = "Activities";
             this.btnActivities.UseVisualStyleBackColor = true;
@@ -62,10 +61,9 @@
             // btnLocations
             // 
             this.btnLocations.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLocations.Location = new System.Drawing.Point(772, 72);
-            this.btnLocations.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLocations.Location = new System.Drawing.Point(515, 46);
             this.btnLocations.Name = "btnLocations";
-            this.btnLocations.Size = new System.Drawing.Size(150, 50);
+            this.btnLocations.Size = new System.Drawing.Size(100, 32);
             this.btnLocations.TabIndex = 2;
             this.btnLocations.Text = "Locations";
             this.btnLocations.UseVisualStyleBackColor = true;
@@ -76,27 +74,29 @@
             this.labelMemberText.AutoSize = true;
             this.labelMemberText.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMemberText.ForeColor = System.Drawing.Color.White;
-            this.labelMemberText.Location = new System.Drawing.Point(50, 59);
+            this.labelMemberText.Location = new System.Drawing.Point(33, 38);
+            this.labelMemberText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMemberText.Name = "labelMemberText";
-            this.labelMemberText.Size = new System.Drawing.Size(210, 56);
+            this.labelMemberText.Size = new System.Drawing.Size(130, 35);
             this.labelMemberText.TabIndex = 3;
             this.labelMemberText.Text = "Member";
             // 
             // progressBarMember
             // 
-            this.progressBarMember.Location = new System.Drawing.Point(60, 231);
+            this.progressBarMember.Location = new System.Drawing.Point(40, 148);
+            this.progressBarMember.Margin = new System.Windows.Forms.Padding(2);
             this.progressBarMember.Name = "progressBarMember";
-            this.progressBarMember.Size = new System.Drawing.Size(1066, 45);
+            this.progressBarMember.Size = new System.Drawing.Size(711, 29);
             this.progressBarMember.TabIndex = 4;
             this.progressBarMember.Value = 10;
+            this.progressBarMember.Click += new System.EventHandler(this.progressBarMember_Click);
             // 
             // btnLogout
             // 
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(58, 119);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLogout.Location = new System.Drawing.Point(39, 76);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(150, 50);
+            this.btnLogout.Size = new System.Drawing.Size(100, 32);
             this.btnLogout.TabIndex = 7;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -104,10 +104,10 @@
             // 
             // MemberMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1200, 703);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.progressBarMember);
             this.Controls.Add(this.labelMemberText);
@@ -115,7 +115,6 @@
             this.Controls.Add(this.btnActivities);
             this.Controls.Add(this.listViewActivities);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MemberMenu";
             this.Text = "MemberMenu";
             this.ResumeLayout(false);

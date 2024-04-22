@@ -73,10 +73,14 @@ namespace FitZuyd.Forms
             {
                 // Haal de geselecteerde activiteit op
                 ListViewItem selectedItem = listViewActivities.SelectedItems[0];
-                int activityId = int.Parse(selectedItem.Text);
+                Activity activity = new Activity(
+                    int.Parse(selectedItem.Text),
+                    selectedItem.SubItems[1].Text,
+                    int.Parse(selectedItem.SubItems[2].Text)
+                );
 
                 // Voeg de activiteit toe aan de lijst van deelgenomen activiteiten van de huidige gebruiker
-                Member.CurrentUser.ParticipatedActivities.Add(new Activity(activityId));
+                Member.ParticipatedActivities.Add(activity);  // Zorg dat Member een static referentie heeft naar de huidige Member.
 
                 // Geef een melding van succesvolle deelname
                 MessageBox.Show("Succesvol deelgenomen aan de activiteit!");
@@ -91,6 +95,5 @@ namespace FitZuyd.Forms
                 MessageBox.Show("Selecteer een activiteit om aan deel te nemen.");
             }
         }
-
     }
 }

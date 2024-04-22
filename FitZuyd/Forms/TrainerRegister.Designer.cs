@@ -188,6 +188,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox inpFullname;
         private System.Windows.Forms.TextBox inpAge;
-        private System.Windows.Forms.Button buttonBack
+        private System.Windows.Forms.Button buttonBack;
     }
 }

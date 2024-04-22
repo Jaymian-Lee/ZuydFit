@@ -15,14 +15,28 @@ namespace FitZuyd.Forms
         public MemberMenu()
         {
             InitializeComponent();
-            foreach (Activity activity in Member.CurrentUser.ParticipatedActivities)
+            listViewActivities.View = View.Details;
+            listViewActivities.GridLines = true;
+
+            listViewActivities.Columns.Add("ID", 75);
+            listViewActivities.Columns.Add("Name: ", 100);
+            listViewActivities.Columns.Add("Points", 150);
+
+            if (Member.ParticipatedActivities != null)
             {
-                ListViewItem listItem = new ListViewItem();
-                listItem.Text = activity.Id.ToString(); 
-                                                        
-                listViewActivities.Items.Add(listItem);
+                foreach (Activity activity in Member.ParticipatedActivities)
+                {
+                    ListViewItem listItem = new ListViewItem(activity.Id.ToString());
+                    listItem.SubItems.Add(activity.Name);
+                    listItem.SubItems.Add(activity.Points.ToString());
+                    listItem.SubItems.Add(activity.LocationId.ToString());
+                    
+
+                    listViewActivities.Items.Add(listItem);
+                }
             }
         }
+
 
         private void btnLocations_Click(object sender, EventArgs e)
         {
@@ -45,5 +59,14 @@ namespace FitZuyd.Forms
             this.Close();
         }
 
+        private void listViewActivities_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBarMember_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
