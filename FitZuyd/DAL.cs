@@ -10,17 +10,22 @@ namespace FitZuyd
 {
     public class DAL
     {
-        //Connection string to the database - Jay
-        //public string conString = "Data Source=desktop-ir29ng7;Initial Catalog=FitZuyd;Integrated Security=True;";
-        //Connection string to the database - Lars
+        // Connection string to the database - Jay
+        // public string conString = "Data Source=desktop-ir29ng7;Initial Catalog=FitZuyd;Integrated Security=True;";
+
+        // Connection string to the database - Lars
         public string conString = "Data Source=.;Initial Catalog=FitZuyd;Integrated Security=True";
         public SqlConnection cnn;
+
+        // Constructor to initialize the SQL connection
         public DAL()
         {
             SqlConnection sqlConnection = new SqlConnection(conString);
         }
 
-        //DataAccessLayer for Member
+        // DataAccessLayer for Member
+
+        // Method to get all members from the database
         public DataTable GetAllCustomers()
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -38,6 +43,7 @@ namespace FitZuyd
             }
         }
 
+        // Method to add a new member to the database
         public void AddMember(Member member)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -57,6 +63,7 @@ namespace FitZuyd
             }
         }
 
+        // Method to update an existing member in the database
         public void UpdateMember(Member member)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -75,6 +82,7 @@ namespace FitZuyd
             }
         }
 
+        // Method to delete a member from the database by id
         public void DeleteMember(int id)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -90,11 +98,12 @@ namespace FitZuyd
             }
         }
 
-        //DataAccessLayer for Trainer
+        // DataAccessLayer for Trainer
+
         /// <summary>
-        /// Get all trainers from the database and puts them in a DataTable
+        /// Get all trainers from the database and put them in a DataTable
         /// </summary>
-        /// <returns></returns>
+        /// <returns>DataTable containing all trainers</returns>
         public DataTable GetAllTrainers()
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -111,10 +120,11 @@ namespace FitZuyd
                 }
             }
         }
+
         /// <summary>
         /// Add a trainer to the database with the constructor values of Trainer
         /// </summary>
-        /// <param name="trainer"></param>
+        /// <param name="trainer">Trainer object containing the details of the trainer</param>
         public void AddTrainer(Trainer trainer)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -132,10 +142,11 @@ namespace FitZuyd
                 }
             }
         }
+
         /// <summary>
-        /// Updates a trainer in the database with the constructor values of Trainer
+        /// Update a trainer in the database with the constructor values of Trainer
         /// </summary>
-        /// <param name="trainer"></param>
+        /// <param name="trainer">Trainer object containing the updated details of the trainer</param>
         public void UpdateTrainer(Trainer trainer)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -154,9 +165,9 @@ namespace FitZuyd
         }
 
         /// <summary>
-        /// Deletes a trainer from the database with the given id
+        /// Delete a trainer from the database by id
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">Id of the trainer to be deleted</param>
         public void DeleteTrainer(int id)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -172,11 +183,12 @@ namespace FitZuyd
             }
         }
 
-        //DataAccessLayer for Activity
+        // DataAccessLayer for Activity
+
         /// <summary>
-        /// Get all activities from the database and puts them in a DataTable
+        /// Get all activities from the database and put them in a DataTable
         /// </summary>
-        /// <returns></returns>
+        /// <returns>DataTable containing all activities</returns>
         public DataTable GetAllActivities()
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -193,10 +205,11 @@ namespace FitZuyd
                 }
             }
         }
+
         /// <summary>
         /// Add an activity to the database with the constructor values of Activity
         /// </summary>
-        /// <param name="activity"></param>
+        /// <param name="activity">Activity object containing the details of the activity</param>
         public void AddActivity(Activity activity)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -213,10 +226,11 @@ namespace FitZuyd
                 }
             }
         }
+
         /// <summary>
-        /// Updates an Activity in the database with the constructor values of Activity
+        /// Update an activity in the database with the constructor values of Activity
         /// </summary>
-        /// <param name="activity"></param>
+        /// <param name="activity">Activity object containing the updated details of the activity</param>
         public void UpdateActivity(Activity activity)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -234,10 +248,11 @@ namespace FitZuyd
                 }
             }
         }
+
         /// <summary>
-        /// Deletes an Activity from the database with the given id
+        /// Delete an activity from the database by id
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">Id of the activity to be deleted</param>
         public void DeleteActivity(int id)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -253,11 +268,12 @@ namespace FitZuyd
             }
         }
 
-        //DataAccessLayer for Location
+        // DataAccessLayer for Location
+
         /// <summary>
-        /// Gets all locations from the database and puts them in a DataTable
+        /// Get all locations from the database and put them in a DataTable
         /// </summary>
-        /// <returns></returns>
+        /// <returns>DataTable containing all locations</returns>
         public DataTable GetAllLocation()
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -275,6 +291,7 @@ namespace FitZuyd
             }
         }
 
+        // Method to get all members from the database
         public DataTable GetAllMembers()
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -293,9 +310,9 @@ namespace FitZuyd
         }
 
         /// <summary>
-        /// Adds a location to the database with the constructor values of Location 
+        /// Add a location to the database with the constructor values of Location 
         /// </summary>
-        /// <param name="location"></param>
+        /// <param name="location">Location object containing the details of the location</param>
         public void CreateLocation(Location location)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -313,9 +330,9 @@ namespace FitZuyd
         }
 
         /// <summary>
-        /// Updates a location in the database with the constructor values of Location
+        /// Update a location in the database with the constructor values of Location
         /// </summary>
-        /// <param name="location"></param>
+        /// <param name="location">Location object containing the updated details of the location</param>
         public void UpdateLocation(Location location)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -332,10 +349,11 @@ namespace FitZuyd
                 }
             }
         }
+
         /// <summary>
-        /// Deletes a location from the database with the given id
+        /// Delete a location from the database by id
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">Id of the location to be deleted</param>
         public void DeleteLocation(int id)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
@@ -350,24 +368,26 @@ namespace FitZuyd
                 }
             }
         }
+
+        // Method to get a trainer by credentials from the database
         public Trainer GetTrainerByCredentials(string username, string password)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
             {
                 cnn.Open();
-                // Stel de SQL-query samen die gebruikt zal worden om de trainer op te zoeken
+                // Create the SQL query to retrieve the trainer
                 var query = "SELECT Id, Name, Age, Username, Password FROM Trainer WHERE Username = @Username AND Password = @Password";
                 using (SqlCommand cmd = new SqlCommand(query, cnn))
                 {
-                    // Voeg de parameters toe aan de SQL-query om SQL-injectie te voorkomen
+                    // Add parameters to the SQL query to prevent SQL injection
                     cmd.Parameters.AddWithValue("@Username", username);
                     cmd.Parameters.AddWithValue("@Password", password);
 
-                    // Voer de query uit en lees het resultaat
+                    // Execute the query and read the result
                     var reader = cmd.ExecuteReader();
                     if (reader.Read())
                     {
-                        // Maak een nieuw Trainer-object aan met de gegevens uit de database
+                        // Create a new Trainer object with the data from the database
                         Trainer trainer = new Trainer(
                             Convert.ToInt32(reader["Id"]),
                             reader["Name"].ToString(),
@@ -381,31 +401,62 @@ namespace FitZuyd
                     else
                     {
                         cnn.Close();
-                        // Retourneer null als er geen trainer gevonden is met de opgegeven credentials
+                        // Return null if no trainer is found with the given credentials
                         return null;
                     }
                 }
             }
         }
+
+        // Method to get a location by id from the database
+        public Location GetLocationById(int locationId)
+        {
+            using (SqlConnection cnn = new SqlConnection(conString))
+            {
+                cnn.Open();
+                var query = "SELECT Id, Name, Address FROM Location WHERE Id = @LocationId";
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
+                {
+                    cmd.Parameters.AddWithValue("@LocationId", locationId);
+                    var reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        Location location = new Location(
+                            Convert.ToInt32(reader["Id"]),
+                            reader["Name"].ToString(),
+                            reader["Address"].ToString()
+                        );
+                        cnn.Close();
+                        return location;
+                    }
+                    else
+                    {
+                        cnn.Close();
+                        return null;
+                    }
+                }
+            }
+        }
+
+        // Method to get a member by credentials from the database
         public Member GetMemberByCredentials(string username, string password)
         {
             using (SqlConnection cnn = new SqlConnection(conString))
             {
                 cnn.Open();
-                // Stel de SQL-query samen die gebruikt zal worden om de trainer op te zoeken
+                // Create the SQL query to retrieve the member
                 var query = "SELECT Id, Name, Age, Progress, Username, Password FROM Member WHERE Username = @Username AND Password = @Password";
                 using (SqlCommand cmd = new SqlCommand(query, cnn))
                 {
-                    // Voeg de parameters toe aan de SQL-query om SQL-injectie te voorkomen
+                    // Add parameters to the SQL query to prevent SQL injection
                     cmd.Parameters.AddWithValue("@Username", username);
                     cmd.Parameters.AddWithValue("@Password", password);
 
-                    // Voer de query uit en lees het resultaat
+                    // Execute the query and read the result
                     var reader = cmd.ExecuteReader();
                     if (reader.Read())
                     {
-                        // Maak een nieuw member-object aan met de gegevens uit de database
-
+                        // Create a new Member object with the data from the database
                         var id = Convert.ToInt32(reader["Id"]);
                         var name = reader["Name"].ToString();
                         var age = Convert.ToInt32(reader["Age"]);
@@ -418,9 +469,7 @@ namespace FitZuyd
                     else
                     {
                         cnn.Close();
-
-                        // Retourneer null als er geen member gevonden is met de opgegeven credentials
-
+                        // Return null if no member is found with the given credentials
                         return null;
                     }
                 }

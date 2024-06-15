@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,17 +16,20 @@ namespace FitZuyd.Forms
         {
             InitializeComponent();
 
+            // Initialize an Activity object to retrieve all activities
             Activity activity = new Activity();
 
-
+            // Set the ListView properties
             listViewActivities.View = View.Details;
             listViewActivities.GridLines = true;
 
+            // Add columns to the ListView
             listViewActivities.Columns.Add("ID", 75);
-            listViewActivities.Columns.Add("Name: ", 100);
+            listViewActivities.Columns.Add("Name", 100);
             listViewActivities.Columns.Add("Points", 150);
-            listViewActivities.Columns.Add("LocationId: ", 200);
+            listViewActivities.Columns.Add("LocationId", 200);
 
+            // Populate the ListView with activities from the database
             foreach (DataRow row in activity.GetAllActivities().Rows)
             {
                 string activityId = row["ID"].ToString();
@@ -43,9 +45,9 @@ namespace FitZuyd.Forms
 
                 listViewActivities.Items.Add(listItem);
             }
-
         }
 
+        // Event handler for the Locations button click
         private void btnLocations_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -53,6 +55,7 @@ namespace FitZuyd.Forms
             memberLocations.Show();
         }
 
+        // Event handler for the Activities button click
         private void btnActivities_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -60,6 +63,7 @@ namespace FitZuyd.Forms
             memberActivtity.Show();
         }
 
+        // Event handler for the Close button click
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -67,25 +71,27 @@ namespace FitZuyd.Forms
             memberMenu.Show();
         }
 
+        // Event handler for the Participate button click
         private void btnParticipate_Click(object sender, EventArgs e)
         {
             if (listViewActivities.SelectedItems.Count > 0)
             {
-                // Haal de geselecteerde activiteit op
+                // Get the selected activity
                 ListViewItem selectedItem = listViewActivities.SelectedItems[0];
-                Activity activity = new Activity(
-                    int.Parse(selectedItem.Text),
-                    selectedItem.SubItems[1].Text,
-                    int.Parse(selectedItem.SubItems[2].Text)
-                );
+                int activityId = int.Parse(selectedItem.Text); // Ensure this is an int
+                string activityName = selectedItem.SubItems[1].Text;
+                int activityPoints = int.Parse(selectedItem.SubItems[2].Text); // Ensure this is an int
+                int locationId = int.Parse(selectedItem.SubItems[3].Text); // Ensure this is an int
 
-                // Voeg de activiteit toe aan de lijst van deelgenomen activiteiten van de huidige gebruiker
-                Member.ParticipatedActivities.Add(activity);  // Zorg dat Member een static referentie heeft naar de huidige Member.
+                Activity activity = new Activity(activityId, activityName, activityPoints, locationId);
 
-                // Geef een melding van succesvolle deelname
+                // Add the activity to the current member's list of participated activities
+                Member.CurrentMember.AddActivity(activity);  // Ensure Member has a static reference to the current Member
+
+                // Display a success message
                 MessageBox.Show("Succesvol deelgenomen aan de activiteit!");
 
-                // Verberg dit scherm en toon het vorige scherm
+                // Hide this form and show the member menu form
                 this.Hide();
                 MemberMenu memberMenu = new MemberMenu();
                 memberMenu.Show();

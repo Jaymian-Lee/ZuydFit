@@ -35,6 +35,7 @@
             this.labelMemberText = new System.Windows.Forms.Label();
             this.progressBarMember = new System.Windows.Forms.ProgressBar();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnFinishActivities = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listViewActivities
@@ -42,7 +43,7 @@
             this.listViewActivities.HideSelection = false;
             this.listViewActivities.Location = new System.Drawing.Point(40, 206);
             this.listViewActivities.Name = "listViewActivities";
-            this.listViewActivities.Size = new System.Drawing.Size(718, 207);
+            this.listViewActivities.Size = new System.Drawing.Size(575, 207);
             this.listViewActivities.TabIndex = 0;
             this.listViewActivities.UseCompatibleStateImageBehavior = false;
             this.listViewActivities.SelectedIndexChanged += new System.EventHandler(this.listViewActivities_SelectedIndexChanged);
@@ -102,12 +103,24 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // btnFinishActivities
+            // 
+            this.btnFinishActivities.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinishActivities.Location = new System.Drawing.Point(651, 206);
+            this.btnFinishActivities.Name = "btnFinishActivities";
+            this.btnFinishActivities.Size = new System.Drawing.Size(100, 32);
+            this.btnFinishActivities.TabIndex = 8;
+            this.btnFinishActivities.Text = "Afronden";
+            this.btnFinishActivities.UseVisualStyleBackColor = true;
+            this.btnFinishActivities.Click += new System.EventHandler(this.btnFinishActivities_Click);
+            // 
             // MemberMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFinishActivities);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.progressBarMember);
             this.Controls.Add(this.labelMemberText);
@@ -130,5 +143,6 @@
         private System.Windows.Forms.Label labelMemberText;
         private System.Windows.Forms.ProgressBar progressBarMember;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnFinishActivities;
     }
 }
